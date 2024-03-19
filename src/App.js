@@ -5,6 +5,7 @@ import { verifyUser } from './services/users.js'
 import Home from "./screens/Home/Home.jsx"
 import SignUp from "./screens/AuthForms/SignUp.jsx"
 import SignIn from "./screens/AuthForms/SignIn.jsx"
+import SignOut from "./screens/AuthForms/SignOut.jsx"
 import Games from "./screens/Games/Games.jsx"
 import GameReviews from "./screens/GameReviews/GameReviews.jsx"
 import MyFavs from "./screens/MyFavs/MyFavs.jsx"
@@ -28,6 +29,7 @@ function App() {
         <Route path="/" element={<Home user={user}/>}/>
         <Route path="/sign-up" element={<SignUp setUser={setUser}/>}/>
         <Route path="/sign-in" element={<SignIn setUser={setUser}/>}/>
+        <Route path="/sign-out" element={<SignOut setUser={setUser} />} />
         <Route path="/games" element={<Games user={user}/>}/>
         <Route path="/reviews" element={<GameReviews user={user}/>}/>
         <Route path="/myfavs" element={
