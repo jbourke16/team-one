@@ -24,7 +24,6 @@ function App() {
 
   return (
     <div className="App">
-      Gucci
       <Routes>
         <Route path="/" element={<Home user={user}/>}/>
         <Route path="/sign-up" element={<SignUp setuser={setUser}/>}/>
