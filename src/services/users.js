@@ -17,6 +17,7 @@ export const signIn = async (credentials) => {
     const resp = await api.post("/users/sign-in", credentials);
     localStorage.setItem("token", resp.data.token);
     const user = jwtDecode(resp.data.token);
+    console.log(user)
     return user;
   } catch (error) {
     throw error;
@@ -34,6 +35,7 @@ export const signOut = async () => {
 
 export const verifyUser = async () => {
   const token = localStorage.getItem("token");
+  console.log(token)
   if (token) {
     const res = await api.get("/users/verify");
     return res.data;
