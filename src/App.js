@@ -26,8 +26,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home user={user}/>}/>
-        <Route path="/sign-up" element={<SignUp setuser={setUser}/>}/>
-        <Route path="/sign-in" element={<SignIn setuser={setUser}/>}/>
+        <Route path="/sign-up" element={<SignUp setUser={setUser}/>}/>
+        <Route path="/sign-in" element={<SignIn setUser={setUser}/>}/>
         <Route path="/games" element={<Games user={user}/>}/>
         <Route path="/reviews" element={<GameReviews user={user}/>}/>
         <Route path="/myfavs" element={
