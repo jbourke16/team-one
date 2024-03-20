@@ -34,6 +34,7 @@
 .sign-up-statement{
     text-align: center;
     font-size: 3em;
+    font-weight: 800;
 }
 .welcome-link{
     text-align: center;
@@ -42,9 +43,9 @@
     font-family: "IBM Plex Sans";
     color: white;
     font-size: 1.5em;
-    width:5em;
+    width:6em;
     height:auto;
-    margin-left: 30%;
+    margin-left: 50%;
     padding:10px;
     border-radius: 10px;
     background-color: #6b4ee6;
