@@ -1,0 +1,49 @@
+.header-container{
+    background-image: linear-gradient(white,#c2c2c2);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    display: grid;
+}
+img{
+    display:grid;
+}
+.header-logo{
+    max-width: 25em;
+    align-self: center;
+    justify-self: center;
+    padding:2em;
+    margin-bottom: 1em;
+}
+.poop{
+    font-size: 200px;
+}
+.catch-phrase{
+    font-size: 8em;
+    text-align: right;
+    margin-left: 4em;
+    color:#6b4ee6;
+    font-family: "Space mono";
+    font-weight: 900;
+    margin-top: 2em;
+}
+.follow-phrase1{
+    font-size: 6em;
+    text-align: left;
+    margin-left: 250px;
+    font-family: "IBM Plex Sans";
+    color:#ffffff;
+    -webkit-text-stroke: .5px #c2c2c2;
+}
+.follow-phrase2{
+    font-size: 4em;
+    text-align: left;
+    margin-left: 180px;
+    font-family: "IBM Plex Sans";
+}
+.monster-header{
+    width:20em;
+    align-self: center;
+    justify-self: center;
+}

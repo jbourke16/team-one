@@ -1,0 +1,20 @@
+nav{
+    position:sticky;
+    top:1px;
+    text-align: center;
+    background-color: #35374B;
+    border-bottom: .5px solid rgb(85, 85, 85);
+}
+.link{
+    text-decoration: none;
+    font-weight: 600;
+    margin: 1.5em;
+    display: inline-flex;
+    padding: 0 2em;
+    font-family: "IBM Plex Sans";
+    color: #7b7b7b;
+}
+.link:hover{
+    color:#6B4EE6
+}
+

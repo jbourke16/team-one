@@ -7,34 +7,27 @@ import Nav from '../../components/Nav/Nav.jsx'
 
 
 function Games({ user }) {
-
-  const [games, setGames] = useState([])
+  const [games, setGames] = useState([]);
 
   useEffect(() => {
     const fetchGames = async () => {
-      const allGames = await getGames()
-      setGames(allGames)
-    }
+      const allGames = await getGames();
+      setGames(allGames);
+    };
 
     fetchGames();
-  }, [])
-
+  }, []);
 
   return (
     <div className="games">
-      <Nav user={user}/>
-      {games.map((game, index) => {
-        return (
-          <Game 
-          name={game.name} 
-          image={game.image}
-          key={index}
-          />
-        )
-      })}
-      
+      <Nav user={user} />
+      <div className="games-container">
+        {games.map((game, index) => {
+          return <Game name={game.name} image={game.image} key={index} />;
+        })}
+      </div>
     </div>
-  )
+  );
 }
 
-export default Games
+export default Games;
