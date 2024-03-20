@@ -10,7 +10,7 @@ const api = axios.create({
   baseURL:
     process.env.NODE_ENV === "production"
       ? "https://rektbackend-d0c80619ec73.herokuapp.com/api/"
-      : "http://localhost:3000/api/",
+      : "https://rektbackend-d0c80619ec73.herokuapp.com/api/",
 });
 
 api.interceptors.request.use(

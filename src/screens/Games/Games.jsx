@@ -23,7 +23,15 @@ function Games({ user }) {
       <Nav user={user} />
       <div className="games-container">
         {games.map((game, index) => {
-          return <Game name={game.name} image={game.image} key={index} />;
+          return <Game 
+          id={game._id}
+          name={game.name} 
+          image={game.image} 
+          bio={game.bio}
+          console={game.console}
+          release={game.release}
+          genre={game.genre}
+          key={index} />;
         })}
       </div>
     </div>

@@ -10,6 +10,8 @@ import Games from "./screens/Games/Games.jsx"
 import GameReviews from "./screens/GameReviews/GameReviews.jsx"
 import MyFavs from "./screens/MyFavs/MyFavs.jsx"
 import MyReviews from "./screens/MyReviews/MyReviews.jsx"
+import AddReview from './modals/Add Reviews/AddReview.jsx'
+import GameDetails from './modals/GameDetails/GameDetails.jsx';
 
 function App() {
 
@@ -32,6 +34,8 @@ function App() {
         <Route path="/sign-out" element={<SignOut setUser={setUser} />} />
         <Route path="/games" element={<Games user={user}/>}/>
         <Route path="/reviews" element={<GameReviews user={user}/>}/>
+        <Route path="/addreview" element={<AddReview user={user}/>}/>
+        <Route path="/gamedetails" element={<GameDetails user={user}/>}/>
         <Route path="/myfavs" element={
           user ? <MyFavs user={user}/> : <Navigate to="/sign-up"/>}/>
         <Route path="/myreviews" element={
