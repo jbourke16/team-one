@@ -44,3 +44,12 @@ export const createReview = async (review) => {
       throw error;
     }
   };
+
+  export const getGameReviews = async (id) => {
+    try {
+      const response = await api.get(`/reviews/games/${id}`)
+      return response.data
+    } catch (error) {
+      throw(error)
+    }
+  }

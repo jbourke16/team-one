@@ -33,7 +33,7 @@ function App() {
         <Route path="/sign-in" element={<SignIn setUser={setUser}/>}/>
         <Route path="/sign-out" element={<SignOut setUser={setUser} />} />
         <Route path="/games" element={<Games user={user}/>}/>
-        <Route path="/reviews" element={<GameReviews user={user}/>}/>
+        <Route path="/reviews/games/:gameId" element={<GameReviews user={user}/>}/>
         <Route path="/addreview" element={<AddReview user={user}/>}/>
         <Route path="/gamedetails" element={<GameDetails user={user}/>}/>
         <Route path="/myfavs" element={

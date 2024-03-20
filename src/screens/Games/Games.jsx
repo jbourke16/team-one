@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react'
 import Game from '../../components/Game/Game.jsx'
 import { getGames } from '../../services/games.js'
 import Nav from '../../components/Nav/Nav.jsx'
-import AddReview from '../../modals/AddReviews/AddReview.jsx'
-
 
 function Games({ user }) {
   const [games, setGames] = useState([]);
