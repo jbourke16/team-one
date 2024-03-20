@@ -7,7 +7,6 @@ import userEvent from '@testing-library/user-event'
 
 function SignIn(props) {
   const navigate = useNavigate()
-  console.log(props)
   const [form, setForm] = useState ({
     email: '',
     password: '',

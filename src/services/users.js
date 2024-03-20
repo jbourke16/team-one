@@ -17,7 +17,7 @@ export const signIn = async (credentials) => {
     const resp = await api.post("/users/sign-in", credentials);
     localStorage.setItem("token", resp.data.token);
     const user = jwtDecode(resp.data.token);
-    console.log(user)
+    console.log(user, resp, credentials)
     return user;
   } catch (error) {
     throw error;
