@@ -15,6 +15,7 @@ nav{
     color: #7b7b7b;
 }
 .link:hover{
-    color:#6B4EE6
+    color:#d7afff;
+    text-shadow: #6b4ee6 1px 0px 10px ;
 }
 

@@ -1,6 +1,8 @@
 import React from 'react'
 import './Home.css'
 import Nav from "../../components/Nav/Nav.jsx";
+import Welcome from "./Welcome.jsx"
+import "./Welcome.css"
 
 
 function Home({user}) {
@@ -21,7 +23,8 @@ function Home({user}) {
       {/* <Nav user={user}/> */}
     </div>
     <Nav user={user}/>
-    <div className='poop'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iure fugit sit ex perspiciatis provident quod nihil aliquam inventore labore corrupti, consectetur aut dolores. Laborum et sint obcaecati quis officiis.</div>
+    <Welcome />
+    <div className='poop'>Welcome to REK'T</div>
   </>
   )
 }

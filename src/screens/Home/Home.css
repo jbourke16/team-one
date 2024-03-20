@@ -13,7 +13,7 @@ img{
     max-width: 25em;
     align-self: center;
     justify-self: center;
-    padding:2em;
+    padding: .5em;
     margin-bottom: 1em;
 }
 .poop{
@@ -26,7 +26,7 @@ img{
     color:#6b4ee6;
     font-family: "Space mono";
     font-weight: 900;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 .follow-phrase1{
     font-size: 6em;
