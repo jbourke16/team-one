@@ -1,0 +1,53 @@
+.monsters-wrapper{
+    background-image: linear-gradient(#c2c2c2, white);
+    padding:2em;
+    display:flex;
+    max-width: 100%;
+}
+.play-it-monster{
+    width:17em;
+    display: inline-flex;
+    margin-left: 100px;
+}
+.play-it-copy{
+    font-size: 5em;
+    display: flex;
+    margin-left: 3em;
+    font-family: "Space Mono";
+    font-weight: 800;
+    color: #6B4EE6;
+    
+}
+.log-it-monster{
+    width:20em;
+    display: flex;
+    margin-left: 400px;
+    text-align: center;
+    justify-content: center;
+}
+.log-it-copy{
+    font-size: 5em;
+    display: flex;
+    margin-left: 3em;
+    font-family: "Space Mono";
+    font-weight: 800;
+    margin-left: 500px;
+    color:black;
+    
+}
+.share-it-monster{
+    width:25em;
+    display: flex;
+    margin-left: 50%;
+    text-align: center;
+    justify-content: center;
+}
+.share-it-copy{
+    font-size: 7em;
+    display: flex;
+    margin-left: 3em;
+    font-family: "Space Mono";
+    font-weight: 800;
+    margin-left: 30px;
+    color: #6B4EE6;
+}
