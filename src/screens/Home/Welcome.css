@@ -1,0 +1,56 @@
+.welcome-statement{
+    font-family: "Space Mono";
+    font-size: 5em;
+    font-weight: 600;
+    padding:1em;
+    margin-left: 30%;
+}
+.welcome-wrapper{
+    display:grid;
+    background-image:linear-gradient(#35374B,#c2c2c2) ;
+}
+.welcome-content-wrapper{
+    background-color: white;
+    display: grid;
+    max-width: 400px;
+    height:auto;
+    font-family: "IBM Plex Sans";
+    font-weight: 400;
+    padding:1em;
+    margin-left: 15%;
+    border-radius: 20px;
+    
+}
+.welcome-content1{
+    font-size: 2.5em;
+    color: #6B4EE6;
+    font-weight: 700;
+}
+.welcome-content2{
+    font-size: 1.5em;
+    color: black;
+
+}
+.sign-up-statement{
+    text-align: center;
+    font-size: 3em;
+}
+.welcome-link{
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "IBM Plex Sans";
+    color: white;
+    font-size: 1.5em;
+    width:5em;
+    height:auto;
+    margin-left: 30%;
+    padding:10px;
+    border-radius: 10px;
+    background-color: #6b4ee6;
+}
+.welcome-link:hover{
+    color:#d7afff;
+    text-shadow: #6b4ee6 1px 0px 10px ;
+    box-shadow: 1px 1px 5px #d7afff;
+}
