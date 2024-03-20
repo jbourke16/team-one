@@ -27,9 +27,8 @@ function AddReview({ user }) {
   const [rating, setRating] = useState(0);
 
   const [review, setReview] = useState({
-    userId: "",
+    userId: user?.id,
     gameId: "",
-    rating: rating,
     comment: "",
   });
 
@@ -43,7 +42,13 @@ function AddReview({ user }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await createReview(review);
+
+    const fullReview = {
+      ...review,
+      rating
+    }
+
+    await createReview(fullReview);
     navigate("/reviews");
   };
 
@@ -73,8 +78,9 @@ function AddReview({ user }) {
               <Rating
                 className="input-rating"
                 style={{ maxWidth: 180 }}
-                value={review.rating}
+                value={rating}
                 onChange={setRating}
+                name="rating"
                 isRequired
                 itemStyles={customStyles}
               />

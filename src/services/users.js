@@ -35,7 +35,6 @@ export const signOut = async () => {
 
 export const verifyUser = async () => {
   const token = localStorage.getItem("token");
-  console.log(token)
   if (token) {
     const res = await api.get("/users/verify");
     return res.data;
