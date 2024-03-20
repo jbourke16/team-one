@@ -10,7 +10,7 @@ import Games from "./screens/Games/Games.jsx"
 import GameReviews from "./screens/GameReviews/GameReviews.jsx"
 import MyFavs from "./screens/MyFavs/MyFavs.jsx"
 import MyReviews from "./screens/MyReviews/MyReviews.jsx"
-import AddReview from './modals/Add Reviews/AddReview.jsx'
+import AddReview from './modals/AddReviews/AddReview.jsx'
 import GameDetails from './modals/GameDetails/GameDetails.jsx';
 
 function App() {
