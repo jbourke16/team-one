@@ -34,14 +34,15 @@ function App() {
         <Route path="/sign-in" element={<SignIn setUser={setUser}/>}/>
         <Route path="/sign-out" element={<SignOut setUser={setUser} />} />
         <Route path="/games" element={<Games user={user}/>}/>
-        <Route path="/reviews/games/:gameId" element={<GameReviews user={user}/>}/>
+        <Route path="/reviews/games/:gameId" element={
+          user ? <GameReviews user={user}/> : <Navigate to="/sign-in"/>}/>
         <Route path="/addreview" element={<AddReview user={user}/>}/>
         <Route path="reviews/:reviewId" element={<EditReview user={user}/>}/>
-        {/* <Route path="/gamedetails" element={<GameDetails user={user}/>}/> */}
+        <Route path="/gamedetails" element={<GameDetails user={user}/>}/>
         <Route path="/myfavs" element={
-          user ? <MyFavs user={user}/> : <Navigate to="/sign-up"/>}/>
+          user ? <MyFavs user={user}/> : <Navigate to="/sign-in"/>}/>
         <Route path="/myreviews" element={
-          user ? <MyReviews user={user}/> : <Navigate to="/sign-up"/>}/>
+          user ? <MyReviews user={user}/> : <Navigate to="/sign-in"/>}/>
         <Route />
       </Routes>
     </div>
