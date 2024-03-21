@@ -11,7 +11,6 @@ import GameReviews from "./screens/GameReviews/GameReviews.jsx"
 import MyFavs from "./screens/MyFavs/MyFavs.jsx"
 import MyReviews from "./screens/MyReviews/MyReviews.jsx"
 import AddReview from './modals/AddReviews/AddReview.jsx'
-// import GameDetails from './modals/GameDetails/GameDetails.jsx';
 import EditReview from './modals/AddReviews/EditReview.jsx';
 
 function App() {
@@ -34,16 +33,12 @@ function App() {
         <Route path="/sign-up" element={<SignUp setUser={setUser}/>}/>
         <Route path="/sign-in" element={<SignIn setUser={setUser}/>}/>
         <Route path="/sign-out" element={<SignOut setUser={setUser} />} />
-        <Route path="/reviews/games/:gameId" element={
-          user ? <GameReviews user={user}/> : <Navigate to="/sign-in"/>}/>
+        { user && <Route path="/reviews/games/:gameId" element={<GameReviews user={user}/>}/>}
         <Route path="/games" element={<Games user={user} setToggleUser={setToggleUser}/>}/>
         <Route path="/addreview" element={<AddReview user={user}/>}/>
         <Route path="reviews/:reviewId" element={<EditReview user={user}/>}/>
-        <Route path="/gamedetails" element={<GameDetails user={user}/>}/>
-        <Route path="/myfavs" element={
-          user ? <MyFavs user={user}/> : <Navigate to="/sign-in"/>}/>
-        <Route path="/myreviews" element={
-          user ? <MyReviews user={user}/> : <Navigate to="/sign-in"/>}/>
+        { user && <Route path="/myfavs" element={<MyFavs user={user}/>}/>}
+        { user && <Route path="/myreviews" element={<MyReviews user={user}/>}/>}
         <Route />
       </Routes>
     </div>

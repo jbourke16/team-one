@@ -19,7 +19,8 @@ const fetchReviews = async () => {
 useEffect(() => {
   fetchReviews()
 }, [])
-console.log(user)
+
+  if (!user) return <h1>Loading...</h1>
 
   return (
     <div className='reviews'>
