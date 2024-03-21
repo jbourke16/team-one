@@ -1,6 +1,8 @@
 import React from "react";
 import "./Game.css";
 import { useState } from "react";
+import { favGame } from "../../services/users.js";
+import AddReview from "../../modals/AddReviews/AddReview.jsx";
 import { Link } from "react-router-dom"
 
 function Game(props) {
@@ -16,6 +18,12 @@ function Game(props) {
     document.body.classList.remove('active-showDetails')
   }
 
+  async function handleFavGameClick(){
+    let response = await favGame(props.id)
+    alert(`${response.message}`)
+    props.setToggleUser(prev => !prev)
+  }
+
   return (
     <div>
     
@@ -28,14 +36,21 @@ function Game(props) {
         <div className="modal-overlay">
           <div className="modal">
             <div className="modal-content">
-              <h2>{props.name}</h2>
-              <p>Bio: {props.bio}</p>
-              <p>Genre: {props.genre}</p>
-              <p>Console: {props.console}</p>
-              <p>Release Date: {props.release}</p>
-              <Link className="link" to={`/reviews/games/${props.id}`}> Reviews </Link>
+
+              <h2 className="game-modal-name">{props.name}</h2>
+              {/* <p>Image: {props.image}</p> */}
+              <p className="game-bio"><span className="game-header">Bio:</span> {props.bio}</p>
+              <p className="game-genre"><span className="game-header">Genre:</span> {props.genre}</p>
+              <p className="game-console"><span className="game-header">Console:</span> {props.console}</p>
+              <p className="game-release"><span className="game-header">Release Date:</span>{props.release}</p>
+              {/* <button>Add Review</button> */}
+              <button 
+                style={{ backgroundColor: props.isFavGame ? "red" : "grey"}}
+                onClick={handleFavGameClick}
+              >Heart</button>
+
               <button className="close-modal" onClick={toggleDetails}>
-                Close
+                X
               </button>
               </div>
           </div>

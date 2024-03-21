@@ -11,20 +11,21 @@ import GameReviews from "./screens/GameReviews/GameReviews.jsx"
 import MyFavs from "./screens/MyFavs/MyFavs.jsx"
 import MyReviews from "./screens/MyReviews/MyReviews.jsx"
 import AddReview from './modals/AddReviews/AddReview.jsx'
-import GameDetails from './modals/GameDetails/GameDetails.jsx';
+// import GameDetails from './modals/GameDetails/GameDetails.jsx';
 import EditReview from './modals/AddReviews/EditReview.jsx';
 
 function App() {
 
   const [user, setUser] = useState(null)
+  const [toggleUser, setToggleUser] = useState(false)
 
   useEffect(()=>{
     const fetchUser = async () => {
-      const user= await verifyUser()
+      const user = await verifyUser()
       user ? setUser(user) : setUser(null)
     }
     fetchUser()
-  }, [])
+  }, [toggleUser])
 
   return (
     <div className="App">
@@ -33,9 +34,9 @@ function App() {
         <Route path="/sign-up" element={<SignUp setUser={setUser}/>}/>
         <Route path="/sign-in" element={<SignIn setUser={setUser}/>}/>
         <Route path="/sign-out" element={<SignOut setUser={setUser} />} />
-        <Route path="/games" element={<Games user={user}/>}/>
         <Route path="/reviews/games/:gameId" element={
           user ? <GameReviews user={user}/> : <Navigate to="/sign-in"/>}/>
+        <Route path="/games" element={<Games user={user} setToggleUser={setToggleUser}/>}/>
         <Route path="/addreview" element={<AddReview user={user}/>}/>
         <Route path="reviews/:reviewId" element={<EditReview user={user}/>}/>
         <Route path="/gamedetails" element={<GameDetails user={user}/>}/>
