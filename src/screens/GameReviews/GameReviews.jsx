@@ -20,6 +20,7 @@ useEffect(() => {
   fetchReviews()
 }, [])
 console.log(user)
+
   return (
     <div className='reviews'>
       <Nav user={user}/>
