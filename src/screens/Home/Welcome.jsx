@@ -5,7 +5,8 @@ import "./Welcome.css"
 function Welcome() {
   return (
     <div className= "welcome-wrapper">
-      <div className= "welcome-statement">Welcome to REK'T!</div>
+      <div className= "welcome-statement">Welcome to</div>
+      <img className='welcome-logo-image' src='https://github.com/jbourke16/team-rekt-frontend/blob/dev/public/logos/LOGO-NEON-PURPLE.png?raw=true' />
         <div className='welcome-content-wrapper'>
             <p className= "welcome-content1">Where your opinion matters!--</p>
             <p className= 'welcome-content2'>Welcome to our gaming haven, where every button press tells a story. Dive into our world, designed exclusively for gamers like you. Think-- Letterboxd, but for the virtual realm, our platform is your ultimate companion in exploring, reviewing, and discussing the vast universe of video games!</p>

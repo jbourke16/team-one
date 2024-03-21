@@ -10,14 +10,10 @@ img{
     display:grid;
 }
 .header-logo{
-    max-width: 25em;
+    max-width: 13em;
     align-self: center;
     justify-self: center;
-    padding: .5em;
     margin-bottom: 1em;
-}
-.poop{
-    font-size: 200px;
 }
 .catch-phrase{
     font-size: 8em;
@@ -46,4 +42,5 @@ img{
     width:20em;
     align-self: center;
     justify-self: center;
+    padding:0 0 2em 0;
 }

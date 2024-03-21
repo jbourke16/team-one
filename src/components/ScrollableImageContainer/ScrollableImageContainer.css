@@ -1,0 +1,14 @@
+.image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.scroll-wrapper img {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
