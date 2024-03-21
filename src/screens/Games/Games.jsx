@@ -5,8 +5,6 @@ import Game from '../../components/Game/Game.jsx'
 import { getGames } from '../../services/games.js'
 import Nav from '../../components/Nav/Nav.jsx'
 import ScrollableImageContainer from '../../components/ScrollableImageContainer/ScrollableImageContainer.jsx'
-import EditReview from '../../modals/AddReviews/EditReview.jsx'
-
 
 function Games({ user }) {
   const [games, setGames] = useState([]);
@@ -19,13 +17,13 @@ function Games({ user }) {
 
     fetchGames();
   }, []);
-
   return (
     <div className="games">
       <Nav user={user} />
       <div className="games-container">
         {games.map((game, index) => {
           return <Game 
+          user={user}
           id={game._id}
           name={game.name} 
           image={game.image} 

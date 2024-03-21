@@ -6,28 +6,31 @@ import Nav from '../../components/Nav/Nav.jsx'
 import AddReview from '../../modals/AddReviews/AddReview.jsx'
 import './GameReviews.css'
 
-function GameReviews() {
+function GameReviews({user}) {
 const[reviews, setReviews] = useState([])
 
 const { gameId } = useParams()
 
+const fetchReviews = async () => {
+  const allReviews = await getGameReviews(gameId);
+  setReviews(allReviews);
+}
+
 useEffect(() => {
-  const fetchReviews = async () => {
-    const allReviews = await getGameReviews(gameId);
-    setReviews(allReviews);
-  }
   fetchReviews()
 }, [])
-
+console.log(user)
   return (
     <div className='reviews'>
-      <Nav />
-      <AddReview />
+      <Nav user={user}/>
+      <AddReview user={user} game={gameId} fetchReviews={fetchReviews}/>
       <div className='reviews-container'>
         {reviews.map((review) => {
           return <Review 
+          user={user}
+          game={review.gameId}
           comment={review.comment}
-          user={review.userId}
+          userId={review.userId}
           rating={review.rating}
           key={review._id}/>
         })}
