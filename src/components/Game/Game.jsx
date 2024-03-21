@@ -28,14 +28,17 @@ function Game(props) {
         <div className="modal-overlay">
           <div className="modal">
             <div className="modal-content">
-              <h2>{props.name}</h2>
-              <p>Bio: {props.bio}</p>
-              <p>Genre: {props.genre}</p>
-              <p>Console: {props.console}</p>
-              <p>Release Date: {props.release}</p>
-              <Link className="link" to={`/reviews/games/${props.id}`}> Reviews </Link>
+
+              <h2 className="game-modal-name">{props.name}</h2>
+              {/* <p>Image: {props.image}</p> */}
+              <p className="game-bio"><span className="game-header">Bio:</span> {props.bio}</p>
+              <p className="game-genre"><span className="game-header">Genre:</span> {props.genre}</p>
+              <p className="game-console"><span className="game-header">Console:</span> {props.console}</p>
+              <p className="game-release"><span className="game-header">Release Date:</span>{props.release}</p>
+              {/* <button>Add Review</button> */}
+
               <button className="close-modal" onClick={toggleDetails}>
-                Close
+                X
               </button>
               </div>
           </div>

@@ -5,12 +5,16 @@ import { useState, useEffect } from 'react'
 import Game from '../../components/Game/Game.jsx'
 import { getGames } from '../../services/games.js'
 import Nav from '../../components/Nav/Nav.jsx'
+import EditReview from '../../modals/AddReviews/EditReview.jsx'
 import Searchbar from '../../components/Searchbar/Searchbar.jsx'
-import ScrollableImageContainer from '../../components/ScrollableImageContainer/ScrollableImageContainer.jsx'
 
+
+ 
 function Games({ user }) {
+  const [scrollable, setScrollable] = useState(false);
   const [games, setGames] = useState([]);
   const [searchedGames, setSearchedGames] = useState([]);
+
 
   useEffect(() => {
     const fetchGames = async () => {
@@ -21,24 +25,39 @@ function Games({ user }) {
 
     fetchGames();
   }, []);
+
+
+  const handleMouseEnter = () => {
+    setScrollable(true);
+  };
+
+  const handleMouseLeave = () => {
+    setScrollable(false);
+  }
+
   return (
     <div className="games">
       <Nav user={user} />
       <Searchbar games={games} setSearchedGames={setSearchedGames}/>
-      <div className="games-container">
-        {searchedGames.map((game, index) => {
-          return <Game 
-          user={user}
-          id={game._id}
-          name={game.name} 
-          image={game.image} 
-          bio={game.bio}
-          console={game.console}
-          release={game.release}
-          genre={game.genre}
-          key={index} 
-          />;
-        })}
+      <div className={`games-container ${scrollable ? 'scrollable' : ''}`}>
+        <div className="gallery">
+          {searchedGames.map((game, index) => (
+            <div className="game-item"onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} key={index}>
+              <Game
+                user={user}
+                key={index}
+                id={game._id}
+                name={game.name}
+                image={game.image}
+                bio={game.bio}
+                console={game.console}
+                release={game.release}
+                genre={game.genre}
+              />
+            </div>
+          ))}
+        </div>
+
       </div>
     </div>
   );

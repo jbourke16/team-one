@@ -1,11 +1,12 @@
 .image-container {
-    width: 10rem;
-    height: 10rem;
-    padding: 1vw 1vw;
+    width: 20rem;
+    height: 20rem;
+    padding: 1em;
     background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     border-radius: .5em;
+    margin:3em 0 1em 1em;
     
 }
 .image-container:hover{
@@ -26,9 +27,6 @@
     text-align: center;
 }
 
-body.active-showDetails {
-    overflow-y: hidden;
-}
 .btn-modal {
     padding: 10px 20px;
     display: block;
@@ -43,25 +41,54 @@ body.active-showDetails {
     right: 0;
     bottom: 0;
     position: fixed;
+    border-radius: 10px;
 }
 .overlay {
     background: rgba(49,49,49,0.8);
 }
 .modal-content {
-    position: absolute;
+    position: relative;
     top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
     line-height: 1.4;
-    background: #F1F1F1;
     padding: 14px 28px;
-    border-radius: 3px;
+    border-radius: 10px;
     max-width: 600px;
     min-width: 300px;
+    background-color: rgb(0, 0, 0, 0.8)
 }
 .close-modal {
     position: absolute;
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+    border:none;
+    font-weight: 800;
+    color:rgb(255, 251, 251);
+    background-color: rgb(0,0,0);
+    font-size: 1.25em;
+}
+.close-modal:hover{
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    color:rgba(255, 185, 185, 0.8)
+}
+.game-modal-name{
+    font-family: "Space Mono";
+    color: #2BBEF2;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.game-header{
+    font-family: "IBM Plex Sans";
+    font-size: 1.25em;
+    font-weight: 600;
+    color:#EBF400;
+    padding: .5em;
+}
+.game-bio,.game-genre,.game-console,.game-release{
+    color:White;
+    font-size: 1em;
+    font-family: "IBM Plex Sans";
+    font-weight: 600;
+    padding: .5em;
 }
