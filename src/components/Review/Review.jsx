@@ -12,8 +12,10 @@ function Review(props) {
 
   useEffect(() => {
     const fetchReviewUser = async () => {
-      const revUser = await findUser(props.userId)
-      setReviewUser(revUser)
+      if (props.userId) {
+        const revUser = await findUser(props.userId)
+        setReviewUser(revUser)
+      }
     }
     fetchReviewUser()
   }, [])
@@ -27,7 +29,6 @@ function Review(props) {
   }, [])
 
 
-  console.log(reviewUser)
   return (
     <div className='review-container'>
       <h3>{game.name}</h3>

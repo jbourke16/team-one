@@ -43,6 +43,7 @@ function Game(props) {
               <p className="game-genre"><span className="game-header">Genre:</span> {props.genre}</p>
               <p className="game-console"><span className="game-header">Console:</span> {props.console}</p>
               <p className="game-release"><span className="game-header">Release Date:</span>{props.release}</p>
+              <Link className="link" to={`/reviews/games/${props.id}`}> Reviews </Link>
               {/* <button>Add Review</button> */}
               <button 
                 style={{ backgroundColor: props.isFavGame ? "red" : "grey"}}
