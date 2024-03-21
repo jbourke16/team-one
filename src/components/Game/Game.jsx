@@ -1,7 +1,7 @@
 import React from "react";
 import "./Game.css";
 import { useState } from "react";
-import AddReview from "../../modals/AddReviews/AddReview.jsx";
+import { Link } from "react-router-dom"
 
 function Game(props) {
 
@@ -29,12 +29,11 @@ function Game(props) {
           <div className="modal">
             <div className="modal-content">
               <h2>{props.name}</h2>
-              {/* <p>Image: {props.image}</p> */}
               <p>Bio: {props.bio}</p>
               <p>Genre: {props.genre}</p>
               <p>Console: {props.console}</p>
               <p>Release Date: {props.release}</p>
-              {/* <button>Add Review</button> */}
+              <Link className="link" to={`/reviews/games/${props.id}`}> Reviews </Link>
               <button className="close-modal" onClick={toggleDetails}>
                 Close
               </button>
