@@ -25,7 +25,11 @@ useEffect(() => {
       <AddReview />
       <div className='reviews-container'>
         {reviews.map((review) => {
-          return <Review key={review._id}/>
+          return <Review 
+          comment={review.comment}
+          user={review.userId}
+          rating={review.rating}
+          key={review._id}/>
         })}
       </div>
     </div>
