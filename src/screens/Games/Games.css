@@ -3,7 +3,7 @@
   height: 100%;
 }
 .gallery {
-  height:900px;
+  height:100%;
   width:fit-content;
   padding: 1em;
   background-color: rgba(0, 0, 0, 0.1);
