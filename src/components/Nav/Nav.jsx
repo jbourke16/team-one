@@ -23,9 +23,10 @@ const alwaysOptions = (
   </>
 )
 
+
 const Nav = ({ user }) => {
   return (
-    <nav>
+
       <div className="nav">
         <div className="links">
           {user && <div className="link-welcome">Welcome, {user.userName}</div>}
@@ -33,7 +34,7 @@ const Nav = ({ user }) => {
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
       </div>
-    </nav>
+ 
   )
 }
 
