@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Game from '../../components/Game/Game.jsx'
 import { getGames } from '../../services/games.js'
 import Nav from '../../components/Nav/Nav.jsx'
+import ScrollableImageContainer from '../../components/ScrollableImageContainer/ScrollableImageContainer.jsx'
 
 function Games({ user }) {
   const [games, setGames] = useState([]);

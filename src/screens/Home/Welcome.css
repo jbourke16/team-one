@@ -2,8 +2,9 @@
     font-family: "Space Mono";
     font-size: 5em;
     font-weight: 600;
-    padding:1em;
+    padding:1em 0 0 0;
     margin-left: 30%;
+    color:white;
 }
 .welcome-wrapper{
     display:grid;
@@ -16,10 +17,16 @@
     height:auto;
     font-family: "IBM Plex Sans";
     font-weight: 400;
-    padding:1em;
+    padding:2em;
     margin-left: 15%;
     border-radius: 20px;
     
+}
+.welcome-logo-image{
+    max-width: 24em;
+    display: flex;
+    margin-left:55%;
+    padding:0 0 1em 0;
 }
 .welcome-content1{
     font-size: 2.5em;
@@ -45,7 +52,7 @@
     font-size: 1.5em;
     width:6em;
     height:auto;
-    margin-left: 50%;
+    margin-left: 45%;
     padding:10px;
     border-radius: 10px;
     background-color: #6b4ee6;

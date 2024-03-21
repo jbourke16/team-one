@@ -1,4 +1,4 @@
-
+/* 
 .games-container{
     display: flex;
     flex-flow: row wrap;
@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     padding-top:2.5em;
-  }
+  } */
 
 /* .game-name:hover{
     display: flex;

@@ -5,28 +5,29 @@
     max-width: 100%;
 }
 .play-it-monster{
-    width:17em;
+    width:12em;
     display: inline-flex;
     margin-left: 100px;
 }
 .play-it-copy{
-    font-size: 5em;
+    font-size: 3em;
     display: flex;
-    margin-left: 3em;
+    margin-left: 5em;
     font-family: "Space Mono";
     font-weight: 800;
     color: #6B4EE6;
+    padding:1em;
     
 }
 .log-it-monster{
-    width:20em;
+    width:14em;
     display: flex;
-    margin-left: 400px;
+    margin-left: 700px;
     text-align: center;
     justify-content: center;
 }
 .log-it-copy{
-    font-size: 5em;
+    font-size: 3em;
     display: flex;
     margin-left: 3em;
     font-family: "Space Mono";
@@ -36,14 +37,14 @@
     
 }
 .share-it-monster{
-    width:25em;
+    width:16em;
     display: flex;
-    margin-left: 50%;
+    margin-left: 20%;
     text-align: center;
     justify-content: center;
 }
 .share-it-copy{
-    font-size: 7em;
+    font-size: 5em;
     display: flex;
     margin-left: 3em;
     font-family: "Space Mono";
