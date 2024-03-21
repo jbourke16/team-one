@@ -4,12 +4,12 @@ import { useState, useEffect } from 'react'
 import Game from '../../components/Game/Game.jsx'
 import { getGames } from '../../services/games.js'
 import Nav from '../../components/Nav/Nav.jsx'
-import ScrollableImageContainer from '../../components/ScrollableImageContainer/ScrollableImageContainer.jsx'
 import EditReview from '../../modals/AddReviews/EditReview.jsx'
 
 
 function Games({ user }) {
   const [games, setGames] = useState([]);
+  const [scrollable, setScrollable] = useState(false);
 
   useEffect(() => {
     const fetchGames = async () => {
@@ -20,21 +20,33 @@ function Games({ user }) {
     fetchGames();
   }, []);
 
+  const handleMouseEnter = () => {
+    setScrollable(true);
+  };
+
+  const handleMouseLeave = () => {
+    setScrollable(false);
+  }
+
   return (
     <div className="games">
       <Nav user={user} />
-      <div className="games-container">
-        {games.map((game, index) => {
-          return <Game 
-          id={game._id}
-          name={game.name} 
-          image={game.image} 
-          bio={game.bio}
-          console={game.console}
-          release={game.release}
-          genre={game.genre}
-          key={index} />;
-        })}
+      <div className={`games-container ${scrollable ? 'scrollable' : ''}`}>
+        <div className="gallery">
+          {games.map((game, index) => (
+            <div className="game-item"onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} key={index}>
+              <Game
+                id={game._id}
+                name={game.name}
+                image={game.image}
+                bio={game.bio}
+                console={game.console}
+                release={game.release}
+                genre={game.genre}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
