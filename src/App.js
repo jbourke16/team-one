@@ -12,6 +12,7 @@ import MyFavs from "./screens/MyFavs/MyFavs.jsx"
 import MyReviews from "./screens/MyReviews/MyReviews.jsx"
 import AddReview from './modals/AddReviews/AddReview.jsx'
 import GameDetails from './modals/GameDetails/GameDetails.jsx';
+import EditReview from './modals/AddReviews/EditReview.jsx';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/games" element={<Games user={user}/>}/>
         <Route path="/reviews/games/:gameId" element={<GameReviews user={user}/>}/>
         <Route path="/addreview" element={<AddReview user={user}/>}/>
+        <Route path="reviews/:reviewId" element={<EditReview user={user}/>}/>
         <Route path="/gamedetails" element={<GameDetails user={user}/>}/>
         <Route path="/myfavs" element={
           user ? <MyFavs user={user}/> : <Navigate to="/sign-up"/>}/>

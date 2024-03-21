@@ -1,9 +1,11 @@
 import React from 'react'
 import './Review.css'
 
-function Review() {
+function Review(props) {
   return (
-    <div>Review</div>
+    <div>
+      {props.comment}
+    </div>
   )
 }
 
