@@ -1,7 +1,7 @@
 import React from "react";
 import "./Game.css";
 import { useState } from "react";
-import AddReview from "../../modals/AddReviews/AddReview.jsx";
+import { Link } from "react-router-dom"
 
 function Game(props) {
 
@@ -28,6 +28,7 @@ function Game(props) {
         <div className="modal-overlay">
           <div className="modal">
             <div className="modal-content">
+
               <h2 className="game-modal-name">{props.name}</h2>
               {/* <p>Image: {props.image}</p> */}
               <p className="game-bio"><span className="game-header">Bio:</span> {props.bio}</p>
@@ -35,6 +36,7 @@ function Game(props) {
               <p className="game-console"><span className="game-header">Console:</span> {props.console}</p>
               <p className="game-release"><span className="game-header">Release Date:</span>{props.release}</p>
               {/* <button>Add Review</button> */}
+
               <button className="close-modal" onClick={toggleDetails}>
                 X
               </button>
