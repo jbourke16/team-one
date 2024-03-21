@@ -2,6 +2,7 @@ import React from "react";
 import "./Game.css";
 import { useState } from "react";
 import AddReview from "../../modals/AddReviews/AddReview.jsx";
+import ScrollableImageContainer from "../ScrollableImageContainer/ScrollableImageContainer.jsx";
 
 function Game(props) {
 

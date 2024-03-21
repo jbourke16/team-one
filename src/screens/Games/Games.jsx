@@ -20,6 +20,8 @@ function Games({ user }) {
     fetchGames();
   }, []);
 
+
+
   return (
     <div className="games">
       <Nav user={user} />
@@ -36,6 +38,12 @@ function Games({ user }) {
           key={index} />;
         })}
       </div>
+      <ScrollableImageContainer 
+      images={games.map(game => {
+        return {src: game.image, alt: game.name}
+        })}
+       
+        />
     </div>
   );
 }

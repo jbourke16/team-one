@@ -1,6 +1,6 @@
-.image-container {
+.scroll-image-container {
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .scroll-wrapper {
