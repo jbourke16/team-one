@@ -1,6 +1,7 @@
 import React from "react";
 import "./Game.css";
 import { useState } from "react";
+import { favGame } from "../../services/users.js";
 import AddReview from "../../modals/AddReviews/AddReview.jsx";
 
 function Game(props) {
@@ -14,6 +15,12 @@ function Game(props) {
     document.body.classList.add('active-showDetails')
   } else {
     document.body.classList.remove('active-showDetails')
+  }
+
+  async function handleFavGameClick(){
+    let response = await favGame(props.id)
+    alert(`${response.message}`)
+    props.setToggleUser(prev => !prev)
   }
 
   return (
@@ -35,6 +42,10 @@ function Game(props) {
               <p>Console: {props.console}</p>
               <p>Release Date: {props.release}</p>
               {/* <button>Add Review</button> */}
+              <button 
+                style={{ backgroundColor: props.isFavGame ? "red" : "grey"}}
+                onClick={handleFavGameClick}
+              >Heart</button>
               <button className="close-modal" onClick={toggleDetails}>
                 Close
               </button>

@@ -8,7 +8,7 @@ import ScrollableImageContainer from '../../components/ScrollableImageContainer/
 import EditReview from '../../modals/AddReviews/EditReview.jsx'
 
 
-function Games({ user }) {
+function Games({ user, setToggleUser }) {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
@@ -25,6 +25,7 @@ function Games({ user }) {
       <Nav user={user} />
       <div className="games-container">
         {games.map((game, index) => {
+          let isFavGame = user.favGames.includes(game._id)
           return <Game 
           id={game._id}
           name={game.name} 
@@ -33,7 +34,10 @@ function Games({ user }) {
           console={game.console}
           release={game.release}
           genre={game.genre}
-          key={index} />;
+          isFavGame={isFavGame}
+          setToggleUser={setToggleUser}
+          key={index}
+          />;
         })}
       </div>
     </div>

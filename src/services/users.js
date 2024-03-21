@@ -36,9 +36,21 @@ export const signOut = async () => {
 export const verifyUser = async () => {
   const token = localStorage.getItem("token");
   if (token) {
-    const res = await api.get("/users/verify");
+    const user = jwtDecode(token);
+
+    const res = await api.get(`/users/${user.id}`);
     return res.data;
   }
   return false;
 };
+
+export const favGame = async (gameId) => {
+  const resp = await api.put(`/users/favGame/${gameId}`);
+  return resp.data
+}
+
+export const getFavGames = async () => {
+  const resp = await api.get("/users/favGames");
+  return resp.data
+}
 
