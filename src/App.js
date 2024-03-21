@@ -37,7 +37,7 @@ function App() {
         <Route path="/reviews/games/:gameId" element={<GameReviews user={user}/>}/>
         <Route path="/addreview" element={<AddReview user={user}/>}/>
         <Route path="reviews/:reviewId" element={<EditReview user={user}/>}/>
-        <Route path="/gamedetails" element={<GameDetails user={user}/>}/>
+        {/* <Route path="/gamedetails" element={<GameDetails user={user}/>}/> */}
         <Route path="/myfavs" element={
           user ? <MyFavs user={user}/> : <Navigate to="/sign-up"/>}/>
         <Route path="/myreviews" element={
