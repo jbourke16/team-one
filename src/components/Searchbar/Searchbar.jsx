@@ -1,9 +1,27 @@
+import { useState } from 'react'
+import Game from '../../components/Game/Game.jsx';
 import React from 'react'
 import './Searchbar.css'
 
-function Searchbar() {
+function Searchbar({ games, setSearchedGames }) {
+
+  const [search, setSearch] = useState("");
+
+  function handleClick() {
+    const filteredGames = games?.filter((game) => {
+      return game.name.toLowerCase().includes(search.toLowerCase())
+    });
+
+    setSearchedGames(filteredGames);
+  }
+
   return (
-    <div>Searchbar</div>
+    <div className="search-section">
+      <div className="search-bar">
+        <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
+        <button className="browse-btn" onClick={handleClick}>Browse</button>
+      </div>
+    </div>
   )
 }
 

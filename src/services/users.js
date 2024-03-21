@@ -54,3 +54,13 @@ export const getFavGames = async () => {
   return resp.data
 }
 
+
+export const findUser = async(id) => {
+  try {
+    const response = await api.get(`/users/${id}`);
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+}
+

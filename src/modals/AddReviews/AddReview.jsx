@@ -1,12 +1,13 @@
 import React from "react";
 import "./ReviewModal.css";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { createReview } from "../../services/reviews.js";
+import { getGame } from "../../services/games.js";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 
-function AddReview({ user }) {
+function AddReview(props) {
   let navigate = useNavigate();
 
   //modal
@@ -25,10 +26,20 @@ function AddReview({ user }) {
   //review form
 
   const [rating, setRating] = useState(0);
+  const [game, setGame] = useState([]);
+
+  useEffect(()=> {
+    const fetchGame = async () =>{
+      const oneGame = await getGame(props.game)
+      setGame(oneGame)
+    }
+    fetchGame()
+  }, [])
+
 
   const [review, setReview] = useState({
-    userId: user?.id,
-    gameId: "",
+    userId: props.user.id,
+    gameId: props.game,
     comment: "",
   });
 
@@ -47,10 +58,13 @@ function AddReview({ user }) {
       ...review,
       rating
     }
-
     await createReview(fullReview);
-    navigate("/reviews");
+    toggleModal()
+    props.fetchReviews()
+  //  navigate(`/reviews/games/${props.game}`)
   };
+
+
 
   //star icon
 
@@ -61,7 +75,7 @@ function AddReview({ user }) {
     activeFillColor: '#EBF400',
     inactiveFillColor: '#35374B',
   }
-
+console.log(window.location)
   return (
     <>
       <button onClick={toggleModal} className="btn-modal">
@@ -73,8 +87,8 @@ function AddReview({ user }) {
           <div onClick={toggleModal} className="overlay"></div>
           <div className=" modal-content">
             <h2> Add Review </h2>
-            <h3>Game Name</h3>
-            <form className="create-review" onSubmit={handleSubmit}>
+            <h3>{game.name}</h3>
+            <form className="create-review" onSubmit={handleSubmit} action="" method="post">
               <Rating
                 className="input-rating"
                 style={{ maxWidth: 180 }}
@@ -94,7 +108,7 @@ function AddReview({ user }) {
                 onChange={handleChange}
               />
             </form>
-            <button className="close-modal" onClick={toggleModal}>
+            <button className="close-modal" onClick={handleSubmit} type="submit" value="Submit">
               Submit Review
             </button>
           </div>
