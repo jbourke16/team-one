@@ -20,12 +20,11 @@ function Game(props) {
 
   async function handleFavGameClick(){
     if (props.isFavGame){
-      let response = await deleteFavGame(props.id)
-      // alert(`${response.message}`)
+      await deleteFavGame(props.id)
       props.setToggleUser(prev => !prev)
+      setShowDetails(false)
     } else {
-      let response = await favGame(props.id)
-      // alert(`${response.message}`)
+      await favGame(props.id)
       props.setToggleUser(prev => !prev)
     }
   }

@@ -1,16 +1,12 @@
 import {useState, useEffect} from 'react';
 import { getFavGames, deleteFavGame } from '../../services/users';
-import './MyFavs.css'; // Importing the CSS file
 import Nav from '../../components/Nav/Nav';
+import './MyFavs.css'; // Importing the CSS file
+import Game from '../../components/Game/Game.jsx';
 
-const MyFavs = ({user}) => {
+const MyFavs = ({user, setToggleUser}) => {
   const [favGames, setFavGames] = useState([])
-  const [showMyFav, setShowMyFav] = useState(false);
    
-  const toggleShowMyFav = () => {
-    setShowMyFav(!showMyFav)
-  }
-
   useEffect(()=>{
     async function fetchFavGames(){
       const data = await getFavGames()
@@ -18,32 +14,35 @@ const MyFavs = ({user}) => {
     }
 
     fetchFavGames()
-  }, [])
-
-  const handleDelete = async (gameId) => {
-    await deleteFavGame(gameId)
-
-    const updatedFavGames = await getFavGames();
-    setFavGames(updatedFavGames.favGames)
-  }
+  }, [user])
 
   return (
     <div className="myfav-container">
-      <Nav user={user}/>
-
+      <Nav user={user} />
       <h1>My Favorite Screen</h1>
       <p>This is my favorite screen where I showcase all my favorite things!</p>
-      <div className="favorite-items" onClick={toggleShowMyFav}>
+      <div className="favorite-items">
         {
-          favGames.length > 0 && favGames.map((game) => (
-            <div className="favorite-item" key={game._id}>
-              <img src={game.image} alt={game.name} />
-              <p>{game.name}</p>
-              <button onClick={() => handleDelete(game._id)}>Delete</button>
-            </div>
-          ))
+          favGames.length > 0 && favGames.map((game, index) => {
+            let isFavGame = user?.favGames?.includes(game._id)
+            return (
+                <Game
+                  id={game._id}
+                  name={game.name}
+                  image={game.image}
+                  bio={game.bio}
+                  console={game.console}
+                  release={game.release}
+                  genre={game.genre}
+                  isFavGame={isFavGame}
+                  setToggleUser={setToggleUser}
+                  key={index}
+                  userName={user?.userName}
+                />
+            )
+          }
+          )
         }
-        {/* Add more favorite items as needed */}
       </div>
     </div>
   );
