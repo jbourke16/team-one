@@ -55,7 +55,7 @@ export const getFavGames = async () => {
 }
 
 export const deleteFavGame = async (gameId) => {
-  const resp = await api.delete(`/users/deleteFavGame/${gameId}`);
+  const resp = await api.put(`/users/deleteFavGame/${gameId}`);
   return resp.data
 }
 
