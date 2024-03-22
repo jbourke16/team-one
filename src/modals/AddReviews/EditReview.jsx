@@ -184,7 +184,7 @@ const customStyles = {
 
 return (
   <>
-    <button onClick={toggleModal} className="btn-modal">
+    <button onClick={toggleModal} className="edit-modal-btn">
       Edit Review
     </button>
 

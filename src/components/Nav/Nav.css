@@ -2,13 +2,13 @@
     position:sticky;
     top:1px;
     text-align: center;
-    background-color: #35374B;
-    border-bottom: .5px solid rgb(85, 85, 85);
+    background-color: RGB(53, 55, 75, 0.8);
+    max-height: fit-content;
 }
 .link{
     text-decoration: none;
     font-weight: 600;
-    margin: 1.5em;
+    /* margin: 1.5em; */
     display: inline-flex;
     padding: 0 2em;
     font-family: "IBM Plex Sans";
@@ -20,11 +20,8 @@
 }
 
 .dropdown-toggle{
-    position:sticky;
-    top:1px;
     text-align: center;
-    background-color: #35374B;
-    border-bottom: .5px solid rgb(85, 85, 85);
+    padding:0 0 2vh;
 }
 .links{
     display: flex;
@@ -34,6 +31,33 @@
 }
 .home-nav-logo{
     width:6em;
+}
+.dropdown-container{
+    display: flex;
+    flex-flow: column nowrap;
+    position:absolute;
+    
+}
+.dropdown-content{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1vh 0 1vh 0;
+    background-color: RGB(0,0,0,.3);
+    border-radius: 1vh;
+}
+.authlink{
+    text-decoration: none;
+    font-weight: 600;
+    margin: 1vh;
+    display: inline-flex;
+    padding: 0 2em;
+    font-family: "IBM Plex Sans";
+    color: #7b7b7b;
+
+}
+.authlink:hover{
+    color:#d7afff;
+    text-shadow: #6b4ee6 1px 0px 10px ;
 }
 
 

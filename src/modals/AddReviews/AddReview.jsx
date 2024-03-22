@@ -78,16 +78,16 @@ function AddReview(props) {
 console.log(window.location)
   return (
     <>
-      <button onClick={toggleModal} className="btn-modal">
-        Add Review
+      <button onClick={toggleModal} className="add-btn-modal">
+        Add your review
       </button>
 
       {modal && (
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
-          <div className=" modal-content">
-            <h2> Add Review </h2>
-            <h3>{game.name}</h3>
+          <div className="add-modal-content">
+            <h2 className="add-instruct"> Add Review </h2>
+            <h3 className="add-game-name">{game.name}</h3>
             <form className="create-review" onSubmit={handleSubmit} action="" method="post">
               <Rating
                 className="input-rating"
@@ -100,17 +100,20 @@ console.log(window.location)
               />
               <textarea
                 className="input-comment"
-                rows={10}
-                placeholder="Review"
+                rows={5}
+                placeholder="Add your review"
                 value={review.comment}
                 name="comment"
                 required
                 onChange={handleChange}
               />
-            </form>
-            <button className="close-modal" onClick={handleSubmit} type="submit" value="Submit">
+              <button className="add-close-modal" onClick={handleSubmit} type="submit" value="Submit">
               Submit Review
             </button>
+            </form>
+            {/* <button className="close-modal" onClick={handleSubmit} type="submit" value="Submit">
+              Submit Review
+            </button> */}
           </div>
         </div>
       )}

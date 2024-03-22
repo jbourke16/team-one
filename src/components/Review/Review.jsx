@@ -31,12 +31,15 @@ function Review(props) {
 
 
   return (
-    <div className='review-container'>
-      <h3>{game.name}</h3>
-      <h4>User: {reviewUser.userName}</h4>
-      <p>Rating: {props.rating}</p>
-      <p>Review: {props.comment}</p>
-
+    <div className='review-wrapper'>
+      <div className='review-container'>
+        <div className='review-content'>
+          <h3 className='review-game-name'>{game.name}</h3>
+          <h4 className='review-user-name'>User: {reviewUser.userName}</h4>
+          <p className='review-user-rating'>Rating: {props.rating}</p>
+          <p className='review-user-comment'>Review: {props.comment}</p>
+        </div>
+      </div>
     </div>
   )
 }
