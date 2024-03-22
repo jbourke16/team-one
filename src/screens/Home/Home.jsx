@@ -27,7 +27,6 @@ function Home({user}) {
       {/* <Nav user={user}/> */}
     </div>
     <Nav user={user}/>
-    <Searchbar />
     <Welcome />
     <Monsters/>
     <Mission />

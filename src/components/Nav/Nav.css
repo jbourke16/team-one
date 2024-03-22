@@ -26,5 +26,14 @@
     background-color: #35374B;
     border-bottom: .5px solid rgb(85, 85, 85);
 }
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:.5em 0 0;
+}
+.home-nav-logo{
+    width:6em;
+}
 
 
