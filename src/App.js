@@ -37,7 +37,7 @@ function App() {
         <Route path="/games" element={<Games user={user} setToggleUser={setToggleUser}/>}/>
         <Route path="/addreview" element={<AddReview user={user}/>}/>
         <Route path="reviews/:reviewId" element={<EditReview user={user}/>}/>
-        { user && <Route path="/myfavs" element={<MyFavs user={user}/>}/>}
+        { user && <Route path="/myfavs" element={<MyFavs user={user} setToggleUser={setToggleUser}/>}/>}
         { user && <Route path="/myreviews" element={<MyReviews user={user}/>}/>}
         <Route />
       </Routes>
