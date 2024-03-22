@@ -1,19 +1,21 @@
 import { NavLink } from "react-router-dom"
+import { useState } from 'react';
 import './Nav.css'
 
 const authenticatedOptions = (
   <>
-  <NavLink className = "link" to = "/myfavs">My Favs</NavLink>
-  <NavLink className = "link" to = "/myreviews">My Reviews</NavLink>
-  <NavLink className = "link" to= "/sign-out">Sign Out</NavLink>
+  <NavLink className = "link" to = "/myfavs">My Favs</NavLink> 
+  <NavLink className = "link" to = "/myreviews">My Reviews</NavLink> 
+  <NavLink className = "link" to= "/sign-out">Sign Out</NavLink> 
   </>
 )
+  
 
 const unauthenticatedOptions = (
   <>
   <NavLink className = "link" to = "/sign-up">Sign Up</NavLink>
   <NavLink className = "link" to = "/sign-in">Sign In</NavLink>
-  </>
+  </> 
 )
 
 const alwaysOptions = (
@@ -25,13 +27,27 @@ const alwaysOptions = (
 
 
 const Nav = ({ user }) => {
+  const [isDropdownOpen, setIsDropDownOpen] = useState(false);
+
+  const toggleDropdown = () => setIsDropDownOpen(!isDropdownOpen);
+
   return (
 
       <div className="nav">
         <div className="links">
-          {user && <div className="link-welcome">Welcome, {user.userName}</div>}
           {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
+          {user ? (
+            <>
+            <div className="dropdown-toggle" onClick={toggleDropdown}>
+              <NavLink className="link">Welcome, {user.userName}</NavLink>
+            </div>
+            {isDropdownOpen && (
+              <div className="dropdown-content">
+                {authenticatedOptions}
+              </div>
+            )}
+            </>
+           ) : unauthenticatedOptions}
         </div>
       </div>
  
