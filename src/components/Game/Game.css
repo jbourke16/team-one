@@ -47,15 +47,15 @@
     background: rgba(49,49,49,0.8);
 }
 .modal-content {
-    position: relative;
-    top: 40%;
-    left: 50%;
     line-height: 1.4;
-    padding: 14px 28px;
+    padding: 1vh 3vh;
     border-radius: 10px;
-    max-width: 600px;
-    min-width: 300px;
-    background-color: rgb(0, 0, 0, 0.8)
+    max-width: 35vw;
+    height: fit-content;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: relative;
+    align-self: center;
+    overflow: none;
 }
 .close-modal {
     position: absolute;
@@ -90,5 +90,10 @@
     font-size: 1em;
     font-family: "IBM Plex Sans";
     font-weight: 600;
-    padding: .5em;
+    padding: 1em;
+}
+.modal{
+    display: flex;
+    align-items: center;
+    margin-left:50vh;
 }

@@ -84,7 +84,7 @@ return (
     {modal && (
       <div className="modal">
         <div onClick={toggleModal} className="overlay"></div>
-        <div className=" modal-content">
+        <div className="add-modal-content">
           <h2> Edit Review </h2>
           <h3>{game.name}</h3>
           <form className="create-review" onSubmit={handleSubmit} action="" method="post">
