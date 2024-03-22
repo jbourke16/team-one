@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import { getFavGames } from '../../services/users';
 import './MyFavs.css'; // Importing the CSS file
+import Nav from '../../components/Nav/Nav';
 
 const MyFavs = () => {
   const [favGames, setFavGames] = useState([])

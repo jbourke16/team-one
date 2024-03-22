@@ -7,6 +7,7 @@ import Monsters from "./Monsters.jsx"
 import "./Monsters.css";
 import Mission from "./Mission.jsx"
 import "./Mission.css";
+import Searchbar from '../../components/Searchbar/Searchbar.jsx';
 
 
 function Home({user}) {
@@ -26,6 +27,7 @@ function Home({user}) {
       {/* <Nav user={user}/> */}
     </div>
     <Nav user={user}/>
+    <Searchbar />
     <Welcome />
     <Monsters/>
     <Mission />
