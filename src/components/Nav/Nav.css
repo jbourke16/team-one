@@ -19,3 +19,12 @@
     text-shadow: #6b4ee6 1px 0px 10px ;
 }
 
+.dropdown-toggle{
+    position:sticky;
+    top:1px;
+    text-align: center;
+    background-color: #35374B;
+    border-bottom: .5px solid rgb(85, 85, 85);
+}
+
+
