@@ -24,11 +24,7 @@ function Game(props) {
     props.setToggleUser(prev => !prev)
   }
 
-  // async function deleteFavGameClick(){
-  //   let response = await deleteFavGame(props.id)
-  //   alert(`${response.message}`)
-  //   props.setToggleUser(prev => !prev)
-  // }
+
 
   return (
     <div>
