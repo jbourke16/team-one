@@ -54,6 +54,11 @@ export const getFavGames = async () => {
   return resp.data
 }
 
+// export const deleteFavGame = async (gameId) => {
+//   const resp = await api.delete(`/users/favGame/${gameId}`);
+//   return resp.data
+// }
+
 
 export const findUser = async(id) => {
   try {
