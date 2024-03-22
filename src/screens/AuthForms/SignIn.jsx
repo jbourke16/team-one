@@ -3,7 +3,7 @@ import './AuthForm.css'
 import {useState} from 'react'
 import { signIn } from '../../services/users.js'
 import { useNavigate } from 'react-router-dom'
-import userEvent from '@testing-library/user-event'
+
 
 function SignIn(props) {
   const navigate = useNavigate()
