@@ -19,16 +19,16 @@ function Game(props) {
   }
 
   async function handleFavGameClick(){
-    let response = await favGame(props.id)
-    alert(`${response.message}`)
-    props.setToggleUser(prev => !prev)
+    if (props.isFavGame){
+      let response = await deleteFavGame(props.id)
+      // alert(`${response.message}`)
+      props.setToggleUser(prev => !prev)
+    } else {
+      let response = await favGame(props.id)
+      // alert(`${response.message}`)
+      props.setToggleUser(prev => !prev)
+    }
   }
-
-  // async function deleteFavGameClick(){
-  //   let response = await deleteFavGame(props.id)
-  //   alert(`${response.message}`)
-  //   props.setToggleUser(prev => !prev)
-  // }
 
   return (
     <div>
