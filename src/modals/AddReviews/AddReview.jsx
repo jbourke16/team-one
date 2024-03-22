@@ -38,7 +38,7 @@ function AddReview(props) {
 
 
   const [review, setReview] = useState({
-    userId: props.user.id,
+    userId: props.user._id,
     gameId: props.game,
     comment: "",
   });

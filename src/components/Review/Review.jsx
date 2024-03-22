@@ -8,11 +8,11 @@ function Review(props) {
   const [game, setGame] = useState([]);
   const [reviewUser, setReviewUser] = useState([]);
 
-  let { gameId } = useParams()
+  
 
   useEffect(() => {
     const fetchReviewUser = async () => {
-      if (props.userId) {
+      if (props.user._id) {
         const revUser = await findUser(props.userId)
         setReviewUser(revUser)
       }
@@ -20,9 +20,10 @@ function Review(props) {
     fetchReviewUser()
   }, [])
 
+
   useEffect(()=> {
     const fetchGame = async () =>{
-      const oneGame = await getGame(gameId)
+      const oneGame = await getGame(props.game)
       setGame(oneGame)
     }
     fetchGame()
@@ -35,6 +36,7 @@ function Review(props) {
       <h4>User: {reviewUser.userName}</h4>
       <p>Rating: {props.rating}</p>
       <p>Review: {props.comment}</p>
+
     </div>
   )
 }
