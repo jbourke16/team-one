@@ -1,7 +1,7 @@
 import React from "react";
 import "./Game.css";
 import { useState } from "react";
-import { favGame } from "../../services/users.js";
+import { favGame, deleteFavGame } from "../../services/users.js";
 import AddReview from "../../modals/AddReviews/AddReview.jsx";
 import { Link } from "react-router-dom"
 
@@ -23,6 +23,12 @@ function Game(props) {
     alert(`${response.message}`)
     props.setToggleUser(prev => !prev)
   }
+
+  // async function deleteFavGameClick(){
+  //   let response = await deleteFavGame(props.id)
+  //   alert(`${response.message}`)
+  //   props.setToggleUser(prev => !prev)
+  // }
 
   return (
     <div>

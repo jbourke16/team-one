@@ -46,6 +46,7 @@ function Games({ user, setToggleUser }) {
               isFavGame={isFavGame}
               setToggleUser={setToggleUser}
               key={index}
+              userName={user?.userName}
             />
             </div>
           );
