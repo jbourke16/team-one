@@ -19,7 +19,7 @@ function Searchbar({ games, setSearchedGames }) {
     <div className="search-section">
       <div className="search-bar">
         <input type="text" value={search} placeholder='Search for a game' onChange={(e) => setSearch(e.target.value)} />
-        <button className="browse-btn" onClick={handleClick}>Browse</button>
+        <button className="browse-btn" onClick={handleClick}>Submit</button>
       </div>
     </div>
   )

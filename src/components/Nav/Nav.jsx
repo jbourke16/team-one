@@ -4,9 +4,9 @@ import './Nav.css'
 
 const authenticatedOptions = (
   <>
-  <NavLink className = "link" to = "/myfavs">My Favs</NavLink> 
-  <NavLink className = "link" to = "/myreviews">My Reviews</NavLink> 
-  <NavLink className = "link" to= "/sign-out">Sign Out</NavLink> 
+  <NavLink className = "authlink" to = "/myfavs">My Favs</NavLink> 
+  <NavLink className = "authlink" to = "/myreviews">My Reviews</NavLink> 
+  <NavLink className = "authlink" to= "/sign-out">Sign Out</NavLink> 
   </>
 )
   
@@ -37,16 +37,18 @@ const Nav = ({ user }) => {
         <div className="links">
           {alwaysOptions}
           {user ? (
-            <>
-            <div className="dropdown-toggle" onClick={toggleDropdown}>
-              <NavLink className="link">Welcome, {user.userName}</NavLink>
+              <div className="dropdown-toggle" onClick={toggleDropdown}>
+                <div className="dropdown-container">
+                  <NavLink className="link">Welcome, {user.userName}</NavLink>
+                
+                  {isDropdownOpen && (
+                  <div className="dropdown-content">
+                    {authenticatedOptions}
+                  </div>
+                
+                  )}
+                  </div>
             </div>
-            {isDropdownOpen && (
-              <div className="dropdown-content">
-                {authenticatedOptions}
-              </div>
-            )}
-            </>
            ) : unauthenticatedOptions}
         </div>
       </div>

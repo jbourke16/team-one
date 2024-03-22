@@ -1,3 +1,30 @@
-.reviews-container{
-    width:fit-content;
+.delete-review-btn{
+    padding: 1vh;
+    margin: 0 0 2em 01;
+    border-radius: 5px;
+    border: none;
+    font-family: "IBM Plex Sans";
+    font-weight: 600;
+    background-color: rgb(177, 57, 57);
+
+
+}
+.delete-review-btn:hover{
+    box-shadow: 1px 3px 2px red;
+    text-shadow: 1px 1px 3px white;
+    color:white;
+}
+.edit-modal-btn{
+    padding:1vh;
+    border-radius: 5px;
+    border: none;
+    font-family: "IBM Plex Sans";
+    font-weight: 600;
+    margin:0 1em 3em 60%;
+    background-color:#6B4EE6;
+}
+.edit-modal-btn:hover{
+    box-shadow: 1px 3px 2px #9d8af2;
+    color:#cabeff;
+    text-shadow: 1px 1px 3px white;
 }

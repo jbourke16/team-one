@@ -29,21 +29,25 @@ function MyReviews({user}) {
   return (
     <div>
       <Nav user={user}/>
-      <div className='reviews-container'>
-        {userReviews.map((userReview) => {
-          return (
-          <div>
-          <Review 
-          user={user}
-          game={userReview.gameId}
-          comment={userReview.comment}
-          userId={userReview.userId}
-          rating={userReview.rating}
-          key={userReview._id}/>
-          <EditReview user={user} reviewId={userReview._id} game={userReview.gameId} fetchUserReviews={fetchUserReviews}/>
-          <button onClick={() => handleDeleteReview(userReview._id)}>Delete</button>
-          </div>)
-        })}
+      <div className='myreviews-wrapper'>
+        <div className='myreviews-container'>
+
+          {userReviews.map((userReview) => {
+            return (
+            <div className='myreviews-content'>
+              <Review 
+              user={user}
+              game={userReview.gameId}
+              comment={userReview.comment}
+              userId={userReview.userId}
+              rating={userReview.rating}
+              key={userReview._id}/>
+              <EditReview user={user} reviewId={userReview._id} game={userReview.gameId} fetchUserReviews={fetchUserReviews}/>
+              <button className='delete-review-btn' onClick={() => handleDeleteReview(userReview._id)}>Delete</button>
+            </div>)
+          })}
+        </div>
+        
 
       </div>
     </div>
