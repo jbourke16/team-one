@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Rating } from "@smastrom/react-rating"
 import "@smastrom/react-rating/style.css";
-import {useParams, useNavigate} from 'react-router-dom'
-import { getReview, updateReview } from '../../services/reviews.js'
+import { useNavigate} from 'react-router-dom'
+import { updateReview } from '../../services/reviews.js'
 import { getGame } from '../../services/games.js';
 import './ReviewModal.css'
 
