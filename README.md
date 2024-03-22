@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+## REK'T
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Overview
 
-## Available Scripts
+Are you ready to get absolutely REK'T? 
 
-In the project directory, you can run:
+REK'T is a social gaming platform that connects passionate gamers, allowing them to explore, review, and share their love of their favorite games.
 
-### `npm start`
+It's like <em>Rotten Tomatoes</em> or <em>Letterboxd</em>, but for games (and arguably, better)!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Visit <a href="">REK'T</a> and start your journey today!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="">Insert Website Image(s) HERE</img>
 
-### `npm test`
+### Wireframe & ERD
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Take a peak below to see where the magic began. As you can see, the team came a long way!
 
-### `npm run build`
+<img src="">Insert Wireframe HERE</img>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="">Insert ERD HERE</img>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Roadmap
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The team set out with a clear outline for where we wanted this project to go. From day one, we knew what we wanted to do and where our strengths were.
 
-### `npm run eject`
+Below is our Roadmap and MVP goals.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src="">Insert Roadmap SS HERE</img>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### MVP Goals
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Team Expectations documentation can be found HERE.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### REK'T Backend
 
-## Learn More
+Take a look below at our Schemas and RouteS set up. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Our goal as a team was to ensure easier front end workability by ensuring our backend was in a good place.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Game Schema
 
-### Code Splitting
+Insert Schema tables HERE.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### User Schema
 
-### Analyzing the Bundle Size
+Insert Schema tables HERE.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Review Schema
 
-### Making a Progressive Web App
+Insert Schema tables HERE.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Meet the REK'T Team
 
-### Advanced Configuration
+Meet the lovely members of our team and view their Github profiles (and a follow won't hurt either)!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<ul>
+    <li><a href="">Abdul Rehman</a></li>
+    <li><a href="">Eric Howington</a></li>
+    <li><a href="">Grace Clower</a></li>
+    <li><a href="">Jenn Bourke</a></li>
+</ul>
 
-### Deployment
+### Resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<ul>
+    <li><a href="">Whimsical</a></li>
+    <li><a href="">Heroku</a></li>
+    <li><a href="">Netlify</a></li>
+    <li><a href="">MongoDB Atlas</a></li>
+    <li><a href="">Modal Walkthrough (YouTube)</a></li>
+</ul>
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
