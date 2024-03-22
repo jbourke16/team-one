@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react';
 import { getFavGames, deleteFavGame } from '../../services/users';
-import Nav from '../../components/Nav/Nav';
 import './MyFavs.css'; // Importing the CSS file
 import Nav from '../../components/Nav/Nav';
 
@@ -30,6 +29,7 @@ const MyFavs = ({user}) => {
 
   return (
     <div className="myfav-container">
+      <Nav user={user}/>
 
       <h1>My Favorite Screen</h1>
       <p>This is my favorite screen where I showcase all my favorite things!</p>
