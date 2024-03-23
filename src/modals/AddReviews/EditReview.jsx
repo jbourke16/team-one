@@ -85,8 +85,8 @@ return (
       <div className="modal">
         <div onClick={toggleModal} className="overlay"></div>
         <div className="add-modal-content">
-          <h2> Edit Review </h2>
-          <h3>{game.name}</h3>
+          <h2 className='add-instruct'> Edit Review </h2>
+          <h3 className='add-game-name'>{game.name}</h3>
           <form className="create-review" onSubmit={handleSubmit} action="" method="post">
             <Rating
               className="input-rating"
@@ -106,10 +106,11 @@ return (
               required
               onChange={handleChange}
             />
-          </form>
-          <button className="close-modal" onClick={handleSubmit} type="submit" value="Submit">
+            <button className="add-close-modal" onClick={handleSubmit} type="submit" value="Submit">
             Submit Review Edit
           </button>
+          </form>
+          
         </div>
       </div>
     )}
