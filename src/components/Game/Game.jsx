@@ -2,11 +2,13 @@ import React from "react";
 import "./Game.css";
 import { useState } from "react";
 import { favGame, deleteFavGame } from "../../services/users.js";
-import AddReview from "../../modals/AddReviews/AddReview.jsx";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 
 function Game(props) {
   const [showDetails, setShowDetails] = useState(false);
+
+  const navigate = useNavigate()
 
   const toggleDetails = () => {
     setShowDetails(!showDetails);
@@ -18,13 +20,20 @@ function Game(props) {
   }
 
   async function handleFavGameClick() {
-    if (props.isFavGame) {
-      await deleteFavGame(props.id);
-      props.setToggleUser((prev) => !prev);
-      setShowDetails(false);
+
+
+    if (props.userName){
+      if (props.isFavGame) {
+        await deleteFavGame(props.id);
+        props.setToggleUser((prev) => !prev);
+        setShowDetails(false);
+      } else {
+        await favGame(props.id);
+        props.setToggleUser((prev) => !prev);
+      }
     } else {
-      await favGame(props.id);
-      props.setToggleUser((prev) => !prev);
+      navigate("/sign-in")
+
     }
   }
 
@@ -57,7 +66,7 @@ function Game(props) {
                   />
                 </button>
               </h2>
-              {/* <p>Image: {props.image}</p> */}
+
               <p className="game-bio">
                 <span className="game-header">Bio:</span> {props.bio}
               </p>
@@ -65,20 +74,26 @@ function Game(props) {
                 <span className="game-header">Genre:</span> {props.genre}
               </p>
               <p className="game-console">
-                <span className="game-header">Console:</span> {props.console}
+
+                <span className="game-header">Console:</span> {props.console.join(", ")}
+
               </p>
               <p className="game-release">
                 <span className="game-header">Release Date:</span>
                 {props.release}
               </p>
               <Link
+
                 className="reviews-link"
+
                 to={props.userName ? `/reviews/games/${props.id}` : "/sign-in"}
               >
                 {" "}
                 Reviews{" "}
               </Link>
+
               {/* <button>Add Review</button> */}
+
 
               <button className="close-modal" onClick={toggleDetails}>
                 X

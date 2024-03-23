@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import { getFavGames, deleteFavGame } from '../../services/users';
 import Nav from '../../components/Nav/Nav';
-import './MyFavs.css'; // Importing the CSS file
+import './MyFavs.css';
 import Game from '../../components/Game/Game.jsx';
 
 const MyFavs = ({user, setToggleUser}) => {
