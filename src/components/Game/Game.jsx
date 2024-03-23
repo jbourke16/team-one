@@ -51,7 +51,7 @@ function Game(props) {
                 <span className="game-header">Genre:</span> {props.genre}
               </p>
               <p className="game-console">
-                <span className="game-header">Console:</span> {props.console}
+                <span className="game-header">Console:</span> {props.console.join(", ")}
               </p>
               <p className="game-release">
                 <span className="game-header">Release Date:</span>

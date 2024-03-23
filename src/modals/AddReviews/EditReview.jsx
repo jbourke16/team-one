@@ -1,14 +1,11 @@
 import { useState, useEffect } from 'react'
 import { Rating } from "@smastrom/react-rating"
 import "@smastrom/react-rating/style.css";
-import { useNavigate} from 'react-router-dom'
-import { updateReview } from '../../services/reviews.js'
+import { updateReview, getReview } from '../../services/reviews.js'
 import { getGame } from '../../services/games.js';
 import './ReviewModal.css'
 
 function EditReview(props) {
-
-let navigate = useNavigate();
 
 //modal
 const [modal, setModal] = useState(false);
@@ -43,6 +40,15 @@ const [review, setReview] = useState({
   comment: "",
 });
 
+useEffect(()=>{
+  const fetchReview = async () => {
+    const oneReview = await getReview(props.reviewId)
+    setReview(oneReview)
+    setRating(oneReview.rating)
+  }
+  fetchReview()
+}, [])
+
 const handleChange = (e) => {
   const { name, value } = e.target;
   setReview({
@@ -62,8 +68,6 @@ const handleSubmit = async (e) => {
   toggleModal()
   props.fetchUserReviews()
 };
-console.log(props.reviewId)
-
 
 //star icon
 
