@@ -28,3 +28,15 @@
     color:#cabeff;
     text-shadow: 1px 1px 3px white;
 }
+.myreviews-header{
+    padding:4vh 0 0 15vw;
+    font-family: "Space Mono";
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: #EA37a3;
+}
+.myreviews-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(#505267 ,rgb(13, 12, 12)) 
+}

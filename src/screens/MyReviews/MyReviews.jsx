@@ -26,9 +26,12 @@ function MyReviews({ user }) {
 
   return (
     <div>
-      <Nav user={user} />
-      <div className="myreviews-wrapper">
-        <div className="myreviews-container">
+      <Nav user={user}/>
+      <div className='myreviews-wrapper'>
+        <div className='myreviews-container'>
+          <h1 className='myreviews-header'>My Reviews:</h1>
+
+
           {userReviews.map((userReview) => {
             return (
               <div className="myreviews-content">
