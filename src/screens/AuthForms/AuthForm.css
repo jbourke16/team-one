@@ -1,0 +1,114 @@
+.sign-up-page {
+  height: 100vh;
+}
+
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(49, 49, 49, 0.8);
+  width: 45%;
+  border-radius: 10px;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* form header */
+
+.sign-up-header {
+  text-align: center;
+  color: white;
+  font-family: "Space Mono";
+  color: #2bbef2;
+  font-weight: 900;
+  font-size: 4vh;
+}
+
+/* form labels and inputs */
+
+.sign-up-component {
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  color: white;
+  font-family: "IBM Plex Sans";
+  font-size: 2.25vh;
+  font-weight: 600;
+  align-items: center;
+}
+
+.sign-up-pwdconf {
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  color: white;
+  font-family: "IBM Plex Sans";
+  font-size: 1.75vh;
+  font-weight: 600;
+  align-items: center;
+}
+
+/* submit button */
+
+.submit-btn {
+  padding: 10px 20px;
+  display: block;
+  margin: 50px auto 2em;
+  font-size: 18px;
+  border: none;
+  background-color: #ebf400;
+  border-radius: 6px;
+  font-family: "Space Mono";
+  font-weight: 600;
+  color: rgb(48, 48, 48);
+}
+
+.submit-btn:hover {
+  box-shadow: 2px 1px 10px rgb(255, 255, 167);
+  color: white;
+}
+
+/* member link */
+
+.link-sign-in {
+  margin-top: 1em;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  padding: 0 2em;
+  font-family: "IBM Plex Sans";
+  color: #7b7b7b;
+}
+.link-sign-in:hover{
+    color:#d7afff;
+    text-shadow: #6b4ee6 1px 0px 10px ;
+}
+
+
+/* imput field */
+
+.sign-up-input {
+  border: 0;
+  background: rgba(65, 65, 65, .4);
+  width: 50%;
+  position: relative;
+  border-radius: 3px;
+  padding: 9px 12px;
+  line-height: 1.4;
+  color: rgb(255 255 255);
+  font-size: 16px;
+  font-weight: 400;
+  height: 30px;
+}

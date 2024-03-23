@@ -4,6 +4,7 @@ import { useState } from "react";
 import { favGame, deleteFavGame } from "../../services/users.js";
 import { Link, useNavigate } from "react-router-dom";
 
+
 function Game(props) {
   const [showDetails, setShowDetails] = useState(false);
 
@@ -19,6 +20,8 @@ function Game(props) {
   }
 
   async function handleFavGameClick() {
+
+
     if (props.userName){
       if (props.isFavGame) {
         await deleteFavGame(props.id);
@@ -30,6 +33,7 @@ function Game(props) {
       }
     } else {
       navigate("/sign-in")
+
     }
   }
 
@@ -43,7 +47,26 @@ function Game(props) {
         <div className="modal-overlay">
           <div className="modal">
             <div className="modal-content">
-              <h2 className="game-modal-name">{props.name}</h2>
+              <h2 className="game-modal-name">
+                {props.name}
+                <button
+                  className="heart-button"
+                  style={{
+                    backgroundColor: props.isFavGame ? "#EA37A3" : "black",
+                    border: "none",
+                    cursor: "pointer",
+                  }}
+                  onClick={handleFavGameClick}
+                >
+                  <img
+                    className="heart-img"
+                    src="https://github.com/jbourke16/team-rekt-frontend/blob/dev/public/Icons/HEART-ICON.png?raw=true"
+                    alt="Heart Icon"
+                    style={{ width: "2.5vw", height: "auto", padding: "3px", filter:"invert(100%) sepia(90%) saturate(0%) hue-rotate(181deg) brightness(104%) contrast(108%)"}}
+                  />
+                </button>
+              </h2>
+
               <p className="game-bio">
                 <span className="game-header">Bio:</span> {props.bio}
               </p>
@@ -51,25 +74,26 @@ function Game(props) {
                 <span className="game-header">Genre:</span> {props.genre}
               </p>
               <p className="game-console">
-                <span className="game-header">Console:</span> {props.console}
+
+                <span className="game-header">Console:</span> {props.console.join(", ")}
+
               </p>
               <p className="game-release">
                 <span className="game-header">Release Date:</span>
                 {props.release}
               </p>
               <Link
-                className="link"
+
+                className="reviews-link"
+
                 to={props.userName ? `/reviews/games/${props.id}` : "/sign-in"}
               >
                 {" "}
                 Reviews{" "}
               </Link>
-              <button
-                style={{ backgroundColor: props.isFavGame ? "red" : "grey" }}
-                onClick={handleFavGameClick}
-              >
-                Heart
-              </button>
+
+              {/* <button>Add Review</button> */}
+
 
               <button className="close-modal" onClick={toggleDetails}>
                 X

@@ -17,33 +17,34 @@ const MyFavs = ({user, setToggleUser}) => {
   }, [user])
 
   return (
-    <div className="myfav-container">
+    <div className="myfavs-wrapper">
       <Nav user={user} />
-      <h1>My Favorite Screen</h1>
-      <p>This is my favorite screen where I showcase all my favorite things!</p>
-      <div className="favorite-items">
-        {
-          favGames.length > 0 && favGames.map((game, index) => {
-            let isFavGame = user?.favGames?.includes(game._id)
-            return (
-                <Game
-                  id={game._id}
-                  name={game.name}
-                  image={game.image}
-                  bio={game.bio}
-                  console={game.console}
-                  release={game.release}
-                  genre={game.genre}
-                  isFavGame={isFavGame}
-                  setToggleUser={setToggleUser}
-                  key={index}
-                  userName={user?.userName}
-                />
-            )
-          }
-          )
-        }
-      </div>
+      <div className='myfavs-container'>
+          <h1 className='myfavs-header'>My Favorite Games:</h1>
+          <div className="favorite-items">
+            {
+              favGames.length > 0 && favGames.map((game, index) => {
+                let isFavGame = user?.favGames?.includes(game._id)
+                return (
+                    <Game
+                      id={game._id}
+                      name={game.name}
+                      image={game.image}
+                      bio={game.bio}
+                      console={game.console}
+                      release={game.release}
+                      genre={game.genre}
+                      isFavGame={isFavGame}
+                      setToggleUser={setToggleUser}
+                      key={index}
+                      userName={user?.userName}
+                    />
+                )
+              }
+              )
+            }
+          </div>
+        </div>
     </div>
   );
 }
