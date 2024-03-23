@@ -28,47 +28,44 @@ Below is our Roadmap and MVP goals.
 
 <img src="">Insert Roadmap SS HERE</img>
 
-### MVP Goals
+### Team Expectations and MVP Goals
 
-Team Expectations documentation can be found HERE.
+Our Team Expectations documentation can be found <a href="https://docs.google.com/document/d/1p3nFn_nanjFpa6AVfQrA2xhVStdaBF5L4lBo6ERhRlc/edit">HERE</a>.
+
+To give a sneak peak though, our most important team values and goals for this project were:
+
+<li>Functional code</li>
+<li>Interactive, Attractive UI</li>
+<li>Thorough communucation between teammates (and most importantly, to not be a Barry, becuase that dude is the worst)</li>
 
 ### REK'T Backend
 
-Take a look below at our Schemas and RouteS set up. 
+Take a look <a href="https://github.com/jbourke16/team-rekt-backend">HERE</a> for our backend! 
 
-Our goal as a team was to ensure easier front end workability by ensuring our backend was in a good place.
-
-### Game Schema
-
-Insert Schema tables HERE.
-
-### User Schema
-
-Insert Schema tables HERE.
-
-### Review Schema
-
-Insert Schema tables HERE.
+In the above linked README, you can find more on our ERD, Routes, and Installation.
 
 ### Meet the REK'T Team
 
 Meet the lovely members of our team and view their Github profiles (and a follow won't hurt either)!
 
 <ul>
-    <li><a href="">Abdul Rehman</a></li>
-    <li><a href="">Eric Howington</a></li>
-    <li><a href="">Grace Clower</a></li>
-    <li><a href="">Jenn Bourke</a></li>
+    <li><a href="https://github.com/arehmanlatif1">Abdul Rehman</a></li>
+    <li><a href="https://github.com/erichowington">Eric Howington</a></li>
+    <li><a href="https://github.com/geclower">Grace Clower</a></li>
+    <li><a href="https://github.com/jbourke16">Jenn Bourke</a></li>
 </ul>
 
 ### Resources
 
 <ul>
-    <li><a href="">Whimsical</a></li>
-    <li><a href="">Heroku</a></li>
-    <li><a href="">Netlify</a></li>
-    <li><a href="">MongoDB Atlas</a></li>
+    <li><a href="https://whimsical.com/">Whimsical</a></li>
+    <li><a href="https://heroku.com/">Heroku</a></li>
+    <li><a href="https://www.netlify.com/">Netlify</a></li>
+    <li><a href="https://reactrating.netlify.app/#asynchronous_onchange">Star Rating Functionality (Netlify)</a></li>
+    <li><a href="https://www.mongodb.com/atlas/database">MongoDB Atlas</a></li>
     <li><a href="">Modal Walkthrough (YouTube)</a></li>
+    <li><a href="https://blog.logrocket.com/how-create-multilevel-dropdown-menu-react/">Dropdown Nav Menu Walkthrough (LogRocket)</a></li>
+
 </ul>
 
 
