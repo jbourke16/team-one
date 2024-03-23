@@ -30,8 +30,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home user={user}/>}/>
-        <Route path="/sign-up" element={<SignUp setUser={setUser}/>}/>
-        <Route path="/sign-in" element={<SignIn setUser={setUser}/>}/>
+        <Route path="/sign-up" element={<SignUp setUser={setUser} user={user}/>}/>
+        <Route path="/sign-in" element={<SignIn setUser={setUser} user={user}/>}/>
         <Route path="/sign-out" element={<SignOut setUser={setUser} />} />
         { user && <Route path="/reviews/games/:gameId" element={<GameReviews user={user}/>}/>}
         <Route path="/games" element={<Games user={user} setToggleUser={setToggleUser}/>}/>
