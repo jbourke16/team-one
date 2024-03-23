@@ -27,55 +27,57 @@ function Games({ user, setToggleUser }) {
     setScrollable(false);
   }
   return (
-    <div className="games">
-      <Nav user={user} />
-      <Searchbar games={games} setSearchedGames={setSearchedGames}/>
-      <div className={`gallery games-container ${scrollable ? 'scrollable' : ''}`}>
-        {searchedGames.slice(0, Math.floor(searchedGames.length / 2)).map((game, index) => {
-          let isFavGame = user?.favGames?.includes(game._id);
-          return (
-            <div className="game-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} key={index}>
-            <Game
-              id={game._id}
-              name={game.name}
-              image={game.image}
-              bio={game.bio}
-              console={game.console}
-              release={game.release}
-              genre={game.genre}
-              isFavGame={isFavGame}
-              setToggleUser={setToggleUser}
-              key={index}
-              userName={user?.userName}
-            />
+        <div className='games-wrapper'>
+          <div className="games">
+            <Nav user={user} />
+            <Searchbar games={games} setSearchedGames={setSearchedGames}/>
+            <div className={`gallery games-container ${scrollable ? 'scrollable' : ''}`}>
+              {searchedGames.slice(0, Math.floor(searchedGames.length / 2)).map((game, index) => {
+                let isFavGame = user?.favGames?.includes(game._id);
+                return (
+                  <div className="game-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} key={index}>
+                  <Game
+                    id={game._id}
+                    name={game.name}
+                    image={game.image}
+                    bio={game.bio}
+                    console={game.console}
+                    release={game.release}
+                    genre={game.genre}
+                    isFavGame={isFavGame}
+                    setToggleUser={setToggleUser}
+                    key={index}
+                    userName={user?.userName}
+                  />
+                  </div>
+                );
+              })}
             </div>
-          );
-        })}
-      </div>
-      <div className={`gallery games-container ${scrollable ? 'scrollable' : ''}`}>
-        {searchedGames.slice(Math.floor(searchedGames.length / 2)).map((game, index) => {
-          let isFavGame = user?.favGames?.includes(game._id);
-          return (
-            <div className="game-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} key={index}>
-            <Game
-              id={game._id}
-              name={game.name}
-              image={game.image}
-              bio={game.bio}
-              console={game.console}
-              release={game.release}
-              genre={game.genre}
-              isFavGame={isFavGame}
-              setToggleUser={setToggleUser}
-              key={index}
-              userName={user?.userName}
-            />
+            <div className={`gallery games-container ${scrollable ? 'scrollable' : ''}`}>
+              {searchedGames.slice(Math.floor(searchedGames.length / 2)).map((game, index) => {
+                let isFavGame = user?.favGames?.includes(game._id);
+                return (
+                  <div className="game-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} key={index}>
+                  <Game
+                    id={game._id}
+                    name={game.name}
+                    image={game.image}
+                    bio={game.bio}
+                    console={game.console}
+                    release={game.release}
+                    genre={game.genre}
+                    isFavGame={isFavGame}
+                    setToggleUser={setToggleUser}
+                    key={index}
+                    userName={user?.userName}
+                  />
+                  </div>
+                );
+              })}
             </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
+          </div>
+        </div>
+        );
+      }
 
-export default Games;
+      export default Games;
