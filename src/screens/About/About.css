@@ -1,0 +1,99 @@
+h2 {
+    color: #2BBEF2;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Space Mono";
+}
+.team-item {
+    background: #ffffff;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 8px 8px;
+    padding: 50px 20px 40px 20px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+.team-item:hover {
+    background: #525ee5;
+    color: white;
+}
+.team-item h3 {
+    font-weight: 100;
+    font-family: "Space Mono";
+    font-weight: 800;
+    font-size: 2.5vh;
+    margin: 20px 0 1px 0!important;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+
+}
+.section-subtitle{
+    white-space: pre-line;
+    color:#2BBEF2;
+}
+.team-item:hover h3 {
+    color: #ddd;
+}
+.team-info{
+    display: block;
+    margin-bottom: 0;
+}
+
+.team-info p {
+    color: #acacac;
+    font-style:italic;
+}
+.team-info::after {
+    background: #008aff;
+    background: -webkit-linear-gradient(135deg, #6B02FF 0%, #985BEF 100%);
+    background: -o-linear-gradient(bottom right, #6B02FF, #985BEF);
+    background: -moz-linear-gradient(bottom right, #008aff, #1ad2fd);
+    background: linear-gradient(135deg, #6B02FF 0%, #985BEF 100%);
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 100px;
+    height: 2px; 
+}
+.team-image {
+    padding: 6px 6px;
+    border-radius: 50%;
+    background-color: #dedede;
+    max-width: 150px;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+ul.team-icon li{
+    margin: 0 3px;
+    display: inline;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+ul.team-icon {
+    margin-top: 30px;
+}
+ul.team-icon li a{
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40x;
+    padding: 8px 8px;
+    font-size: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+.team-icon li a:hover {
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    color: #dedede;
+}
