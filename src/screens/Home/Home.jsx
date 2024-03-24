@@ -7,7 +7,7 @@ import Monsters from "./Monsters.jsx";
 import "./Monsters.css";
 import Mission from "./Mission.jsx";
 import "./Mission.css";
-import Searchbar from "../../components/Searchbar/Searchbar.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 
 function Home({ user }) {
   return (
@@ -34,6 +34,7 @@ function Home({ user }) {
       <Welcome />
       <Monsters />
       <Mission />
+      <Footer />
     </>
   );
 }

@@ -1,19 +1,23 @@
-h2 {
-    color: #2BBEF2;
-    text-align: center;
-    font-size: 40px;
+.section-title{
+    padding: 4vh 0 0 8vw;
     font-family: "Space Mono";
+    font-size: 3.5vw;
+    font-weight: 700;
+    text-align: center;
+    color: #EA37a3;
 }
 .team-item {
     background: #ffffff;
     text-align: center;
-    margin: 20px 0;
-    border-radius: 8px 8px;
-    padding: 50px 20px 40px 20px;
+    font-family: "Space Mono";
+    margin: 2em 5em;
+    border-radius: 1em 1em;
+    padding: 2em 3em;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
+
 }
 .team-item:hover {
     background: #525ee5;
@@ -31,21 +35,15 @@ h2 {
     -moz-transition: all 0.25s ease-in-out;
 
 }
-.section-subtitle{
-    white-space: pre-line;
-    color:#2BBEF2;
-}
 .team-item:hover h3 {
     color: #ddd;
 }
 .team-info{
     display: block;
     margin-bottom: 0;
-}
-
-.team-info p {
+    font-family: "Space Mono";
+    font-style: italic;
     color: #acacac;
-    font-style:italic;
 }
 .team-info::after {
     background: #008aff;
@@ -60,40 +58,11 @@ h2 {
     height: 2px; 
 }
 .team-image {
-    padding: 6px 6px;
+    padding: .5em .5em;
     border-radius: 50%;
     background-color: #dedede;
-    max-width: 150px;
+    max-width: 9em;
     transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
-}
-ul.team-icon li{
-    margin: 0 3px;
-    display: inline;
-    transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-}
-
-ul.team-icon {
-    margin-top: 30px;
-}
-ul.team-icon li a{
-    border-radius: 50%;
-    color: #fff;
-    width: 40px;
-    height: 40x;
-    padding: 8px 8px;
-    font-size: 20px;
-    line-height: 20px;
-    display: inline-block;
-}
-.team-icon li a:hover {
-    transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    color: #dedede;
 }
