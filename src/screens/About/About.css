@@ -10,13 +10,14 @@
     background: #ffffff;
     text-align: center;
     font-family: "Space Mono";
-    margin: 2em 5em;
+    margin: 2em 0 5em 20em;
     border-radius: 1em 1em;
     padding: 2em 3em;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
+    width:50%;
 
 }
 .team-item:hover {
@@ -65,4 +66,12 @@
     transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
+}
+.github-icon{
+    width:4vw;
+    margin-left: 45%;
+
+}
+.github-icon:hover{
+    filter:invert(100%) sepia(100%) saturate(0%) hue-rotate(253deg) brightness(102%) contrast(103%);
 }
