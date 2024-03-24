@@ -12,6 +12,7 @@ import MyFavs from "./screens/MyFavs/MyFavs.jsx"
 import MyReviews from "./screens/MyReviews/MyReviews.jsx"
 import AddReview from './modals/AddReviews/AddReview.jsx'
 import EditReview from './modals/AddReviews/EditReview.jsx';
+import About from './screens/About/About.jsx';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
         { user && <Route path="/myfavs" element={<MyFavs user={user} setToggleUser={setToggleUser}/>}/>}
         { user && <Route path="/myreviews" element={<MyReviews user={user}/>}/>}
         <Route />
+        <Route  path="/about" element={<About />} />
       </Routes>
     </div>
   );

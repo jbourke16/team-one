@@ -22,6 +22,7 @@ const alwaysOptions = (
   <>
   <NavLink className = "link" to ="/"><img className="home-nav-logo" src="https://github.com/jbourke16/team-rekt-frontend/blob/dev/public/logos/LOGO-NEON.png?raw=true"/></NavLink>
   <NavLink className = "link" to = "/games">Browse Games</NavLink>
+  <NavLink className="link" to="/about">About</NavLink>
   </>
 )
 
