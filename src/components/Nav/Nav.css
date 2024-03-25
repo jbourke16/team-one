@@ -1,0 +1,61 @@
+.nav{
+    position:sticky;
+    top:1px;
+    text-align: center;
+    background-color: RGB(53, 55, 75, 0.8);
+    max-height: fit-content;
+}
+.link{
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    font-family: "IBM Plex Sans";
+    color: #7b7b7b;
+}
+.link:hover{
+    color:#d7afff;
+    text-shadow: #6b4ee6 1px 0px 10px ;
+}
+
+.dropdown-toggle{
+    text-align: center;
+    padding:0 0 2vh;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:.5em 0 0;
+}
+.home-nav-logo{
+    width:6em;
+}
+.dropdown-container{
+    display: flex;
+    flex-flow: column nowrap;
+    position:absolute;
+    
+}
+.dropdown-content{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1vh 0 1vh 0;
+    background-color: RGB(0,0,0,.3);
+    border-radius: 1vh;
+}
+.authlink{
+    text-decoration: none;
+    font-weight: 600;
+    margin: 1vh;
+    display: inline-flex;
+    padding: 0 2em;
+    font-family: "IBM Plex Sans";
+    color: #7b7b7b;
+
+}
+.authlink:hover{
+    color:#d7afff;
+    text-shadow: #6b4ee6 1px 0px 10px ;
+}
+
+

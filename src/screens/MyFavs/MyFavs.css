@@ -1,0 +1,27 @@
+.myfavs-wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow: none;
+    margin: 1em ;
+}
+
+.myfavs-header{
+    padding:4vh 0 0 8vw;
+    font-family: "Space Mono";
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: #EA37a3;
+}
+
+.favorite-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+    margin-inline-start: 3em;
+    margin-inline-end: 3em;
+    align-items: center; /* Adjust as needed */
+    justify-content: center; /* Adjust as needed */
+    padding: 2vw;
+  
+}
+

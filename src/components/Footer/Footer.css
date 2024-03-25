@@ -1,0 +1,53 @@
+.footer-wrapper{
+    width:100vw;
+    height: 5vh;
+    background-color: black;
+
+}
+.about-us{
+    background-color: black;
+}
+.about-link{
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    font-family: "IBM Plex Sans";
+    color: #7b7b7b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 1em;
+}
+.about-link:hover{
+    color:#d7afff;
+    text-shadow: #6b4ee6 1px 0px 10px ;
+}
+.sw-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content:baseline;
+    align-items: center;
+    background-color: black;
+    width: 100vw;
+    
+}
+.mongo-png, .express-png, .reactjs-png, .node-png{
+    width:1.5vw;
+    padding: 1vw;
+    height:fit-content;
+    filter: invert(51%) sepia(0%) saturate(27%) hue-rotate(56deg) brightness(96%) contrast(87%);
+}
+.github-repo{
+    width:2vw;
+    filter: invert(51%) sepia(0%) saturate(27%) hue-rotate(56deg) brightness(96%) contrast(87%);
+
+}
+.repo{
+    margin-left: 65%;
+}
+.github-repo:hover{
+    filter: invert(30%) sepia(79%) saturate(3505%) hue-rotate(241deg) brightness(94%) contrast(91%);
+
+
+
+}

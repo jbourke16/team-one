@@ -1,0 +1,38 @@
+
+
+.games{
+  width:100%;
+  height: 100%;
+}
+.gallery {
+  height:100%;
+  width:fit-content;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.1);
+  display:grid;
+  border-radius: .5em;
+  margin:1em;
+  
+}
+.image-container:hover{
+  box-shadow:5px 5px 5px rgb(255, 255, 255); 
+}
+.game-image {
+  width: 100%;
+  height:  100%;
+  object-fit:scale-down;
+}
+.games-container {
+  overflow-x: hidden;
+  width:100%;
+}
+
+.scrollable {
+  overflow-x: auto;
+}
+
+.gallery {
+  display: flex;
+  transition: all 0.3s ease;
+}
+
