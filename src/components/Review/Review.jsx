@@ -31,7 +31,7 @@ function Review(props) {
         <div className="review-content">
           <h3 className="review-game-name">{game.name}</h3>
           <h4 className="review-user-name">User: {reviewUser.userName}</h4>
-          <p className="review-user-rating">Rating: {props.rating}</p>
+          <p className="review-user-rating">Rating: {props.rating}/5</p>
           <p className="review-user-comment">Review: {props.comment}</p>
         </div>
       </div>
