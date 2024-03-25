@@ -8,7 +8,7 @@ function Footer() {
       <div className='footer-container'>
         <div className='footer-content'>
           <div className="about-us">
-              <NavLink className="about-link" to="/about">About Us</NavLink>
+              <NavLink className="about-link" to="/about">Dev Team</NavLink>
               
           </div>
           <div className='sw-icons'> Made With:

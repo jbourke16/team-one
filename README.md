@@ -90,6 +90,7 @@ Meet the lovely members of our team and view their Github profiles (and a follow
     <li><a href="https://www.mongodb.com/atlas/database">MongoDB Atlas</a></li>
     <li><a href="">Modal Walkthrough (YouTube)</a></li>
     <li><a href="https://blog.logrocket.com/how-create-multilevel-dropdown-menu-react/">Dropdown Nav Menu Walkthrough (LogRocket)</a></li>
+    <li><a href="https://codepen.io/sosuke/pen/Pjoqqp">Convert HEX color to color Filter</a><li>
 
 </ul>
 
