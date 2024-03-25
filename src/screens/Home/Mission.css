@@ -45,3 +45,16 @@
     font-weight: 600;
     font-family: "Space Mono";
 }
+.join-logo{
+    width:8vw;
+}
+.join-logo:hover{
+    filter: invert(30%) sepia(79%) saturate(3505%) hue-rotate(241deg) brightness(94%) contrast(91%);
+
+
+}
+.join-rekt{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}

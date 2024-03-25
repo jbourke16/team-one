@@ -37,3 +37,17 @@
     height:fit-content;
     filter: invert(51%) sepia(0%) saturate(27%) hue-rotate(56deg) brightness(96%) contrast(87%);
 }
+.github-repo{
+    width:2vw;
+    filter: invert(51%) sepia(0%) saturate(27%) hue-rotate(56deg) brightness(96%) contrast(87%);
+
+}
+.repo{
+    margin-left: 65%;
+}
+.github-repo:hover{
+    filter: invert(30%) sepia(79%) saturate(3505%) hue-rotate(241deg) brightness(94%) contrast(91%);
+
+
+
+}
