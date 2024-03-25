@@ -8,17 +8,33 @@ REK'T is a social gaming platform that connects passionate gamers, allowing them
 
 It's like <em>Rotten Tomatoes</em> or <em>Letterboxd</em>, but for games (and arguably, better)!
 
-Visit <a href="">REK'T</a> and start your journey today!
+Visit and sign up with <a href="">REK'T</a> - start your journey today!
 
-<img src="">Insert Website Image(s) HERE</img>
+![alt text](https://github.com/jbourke16/team-rekt-frontend/assets/156385243/6280d31f-5575-46d8-8aff-9933a0fb612a)
 
-### Wireframe & ERD
+### Functionality
+
+With REK'T, you can browse games as a guest or you can sign up so you can favorite games and leave reviews. If your heart desires, you can unfavorite a game or delete or edit a review.
+
+See below for how these pages look.
+
+Browsing Games:
+
+![alt text](https://github.com/jbourke16/team-rekt-frontend/assets/156385243/1ee41018-fca5-47b0-abe3-70c073013e3a)
+
+Your Favorites Page:
+
+![alt text](https://github.com/jbourke16/team-rekt-frontend/assets/156385243/658f4e8b-ab7b-446f-be32-92e1ec3cfdfb)
+
+Your Reviews:
+
+![alt text](https://github.com/jbourke16/team-rekt-frontend/assets/156385243/9518f82f-230b-4c96-8238-13fe0378d67d)
+
+### Wireframe
 
 Take a peak below to see where the magic began. As you can see, the team came a long way!
 
-<img src="">Insert Wireframe HERE</img>
-
-<img src="">Insert ERD HERE</img>
+![alt text](https://github.com/jbourke16/team-rekt-frontend/assets/156385243/fdb464bb-ad27-4a78-a1d9-a22548bf08cc)
 
 ### Roadmap
 
@@ -26,7 +42,7 @@ The team set out with a clear outline for where we wanted this project to go. Fr
 
 Below is our Roadmap and MVP goals.
 
-<img src="">Insert Roadmap SS HERE</img>
+![alt text](https://github.com/jbourke16/team-rekt-frontend/assets/156385243/04d9012d-815a-4c74-a01d-9ec79c6246aa)
 
 ### Team Expectations and MVP Goals
 
