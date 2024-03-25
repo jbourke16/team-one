@@ -21,7 +21,7 @@ function About() {
                         <p>Back End</p>
                         <p>Route Master</p>
                     </div>
-                    <p className='fav-game'>Favorite Games: </p>
+                    <p className='fav-game'>Favorite Games: Civ V, Mind</p>
                     <p><a href="https://github.com/geclower"><img className='github-icon' src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-icon.png"/></a></p>
             
                 </div>
