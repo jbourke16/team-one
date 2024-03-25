@@ -1,5 +1,7 @@
 ## REK'T
 
+<img src="https://github.com/jbourke16/team-rekt-frontend/blob/dev/public/logos/LOGO-NEON-PURPLE.png?raw=true" width="300" height="auto">
+
 ### Overview
 
 Are you ready to get absolutely REK'T? 
@@ -36,7 +38,14 @@ Take a peak below to see where the magic began. As you can see, the team came a 
 
 ![alt text](https://github.com/jbourke16/team-rekt-frontend/assets/156385243/fdb464bb-ad27-4a78-a1d9-a22548bf08cc)
 
+
+### Component Hierachy Map
+
+![alt text](https://github.com/jbourke16/team-rekt-frontend/blob/dev/public/READMEImages/OBJECT%20HIEARCHY%20MAP.png?raw=true)
+
 ### Roadmap
+
+
 
 The team set out with a clear outline for where we wanted this project to go. From day one, we knew what we wanted to do and where our strengths were.
 
