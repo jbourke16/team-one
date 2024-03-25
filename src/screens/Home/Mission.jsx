@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Mission.css"
+import { NavLink } from 'react-router-dom';
 
 function Mission() {
   return (
@@ -23,7 +24,7 @@ function Mission() {
                 <div className='statement-body'>Access REK'T anytime, anywhere. Our app is available across multiple devices, ensuring you never miss a gaming moment, whether you're at home or on the move.</div>
             </div>
         <div className='closing-holder'>
-            <div className='closing-body'>Join REK'T and elevate your gaming experience today! Download now and embark on an epic journey through the thrilling world of video games like never before.</div>
+            <div className='closing-body'>Join <NavLink className = "join-rekt" to = "/sign-up"><img className='join-logo' src="https://github.com/jbourke16/team-rekt-frontend/blob/dev/public/logos/LOGO-OUTLINE-WHITE.png?raw=true"/></NavLink>and elevate your gaming experience today! Download now and embark on an epic journey through the thrilling world of video games like never before.</div>
         </div>
         </div>
     </div>

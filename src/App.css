@@ -3,4 +3,48 @@ html{
     overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;
 }
+@media only screen and (max-width: 430px) {
+    .App{
+        width:430px;
+    }
+
+    .header-container{
+        display: none;
+    }
+    img{
+        display:none;
+    }
+    .header-logo{
+        display: none;
+    }
+    .catch-phrase{
+        display: none;
+    }
+    .follow-phrase1{
+        display: none;
+    }
+    .follow-phrase2{
+       display: none;
+    }
+    .monster-header{
+       display: none;
+    }
+    html{
+        background-color: #35374B;
+    }
+    .welcome-wrapper{
+        align-items: center;
+        width: 100vh;
+        background-color: #35374B;
+    }
+    .mission-wrapper{
+        background-color: #35374B;
+    }
+    .mission-container{
+        background-color: #35374B;
+    }
+    .monsters-wrapper{
+        display: none;
+    }
+  }
 
