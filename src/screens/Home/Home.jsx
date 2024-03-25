@@ -34,7 +34,7 @@ function Home({ user }) {
       <Welcome />
       <Monsters />
       <Mission />
-      <Footer />
+      <Footer user={user} />
     </>
   );
 }
