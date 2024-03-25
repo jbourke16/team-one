@@ -2,11 +2,11 @@ import React from 'react'
 import "./About.css"
 import Nav from "../../components/Nav/Nav.jsx"
  
-function About() {
+function About({ user }) {
   return (
     <section className='section-white'>
     <div className="about-container">
-        <Nav />
+        <Nav user={user}/>
     
             <div>
                 <h1 className="section-title">The Team Behind Rek'T</h1>
