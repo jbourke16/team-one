@@ -80,6 +80,18 @@ Meet the lovely members of our team and view their Github profiles (and a follow
     <li><a href="https://github.com/jbourke16">Jenn Bourke</a></li>
 </ul>
 
+
+### Tech Stack
+
+
+**Client:** React
+
+**Server:** Node, Express
+
+**Database:** MongoDB
+
+**Languages:** JavaScript, HTML, CSS
+
 ### Resources
 
 <ul>
