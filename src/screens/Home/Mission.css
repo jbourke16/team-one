@@ -58,3 +58,30 @@
     align-content: center;
     justify-content: center;
 }
+
+@media(max-width: 550px){
+    .mission-container{
+        max-width: 90%;
+    }
+    .join-logo{
+        width: 30%;
+     }
+}
+
+@media (max-width: 430px){
+    .mission-container{
+        max-width: 90%;
+    }
+    .mission-header{
+        font-size: 3.25em;
+    }
+    .statement-holder{
+        width: 12em;
+    }
+    .statement-header{
+        font-size: 1.5em;
+    }
+    .join-logo{
+       width: 30%;
+    }
+}

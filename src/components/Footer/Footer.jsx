@@ -11,7 +11,7 @@ function Footer() {
               <NavLink className="about-link" to="/about">Dev Team</NavLink>
               
           </div>
-          <div className='sw-icons'> Made With:
+          <div className='sw-icons'> 
             <img className='mongo-png' src='https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/mongodb-icon.png'/>
             <img className='express-png' src='https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/express-js-icon.png'/>
             <img className='reactjs-png' src='https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/react-js-icon.png'/>
