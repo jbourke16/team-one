@@ -112,3 +112,59 @@
   font-weight: 400;
   height: 30px;
 }
+
+@media(max-height:600px){
+  .sign-up-container{
+    height: 95%
+  }
+  .form-container{
+    height:75%
+  }
+  .sign-up-header{
+    font-size: 3vh;
+  }
+  .sign-up-input{
+    height:23px;
+    line-height: 1;
+    font-size: 12px;
+  }
+  .submit-btn{
+    margin: 30px auto 2em
+  }
+}
+
+@media(max-width:1025px){
+  .sign-up-container{
+    margin-top: 6%;
+  }
+  .form-container{
+    width: 80%;
+    height: 75%
+  }
+}
+
+@media(max-width:450px){
+  .sign-up-container{
+    height: 80%;
+    justify-content: center;
+
+  }
+  .form-container{
+    width: 85%
+  }
+  .sign-up-component{
+    flex-direction: column;
+  }
+  .sign-up-pwdconf{
+    flex-direction: column;
+  }
+  .sign-up-input{
+    width: 90%
+  }
+  .sign-up-header{
+    font-size: 2.5vh;
+  }
+  .submit-btn{
+    margin: 30px auto 2em
+  }
+}
