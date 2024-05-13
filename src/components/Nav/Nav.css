@@ -58,4 +58,8 @@
     text-shadow: #6b4ee6 1px 0px 10px ;
 }
 
-
+@media(max-width:450px){
+    .link{
+        font-size: 13px;
+    }
+}
