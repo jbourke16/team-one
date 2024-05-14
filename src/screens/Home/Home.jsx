@@ -14,10 +14,10 @@ function Home({ user }) {
     <>
       <div>
         <div className="header-container">
-          <h1 className="catch-phrase">Play it, Love it, Log it.</h1>
+          <h1 className="catch-phrase">Play it, <br></br>Love it, <br></br>Log it.</h1>
           <h2 className="follow-phrase1">Level up your gaming experience:</h2>
           <h2 className="follow-phrase2">
-            Connect, Discover, and Review with-
+            Connect, Discover, and Review with
           </h2>
           <img
             className="header-logo"
