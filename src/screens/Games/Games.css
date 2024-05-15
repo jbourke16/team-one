@@ -6,7 +6,7 @@
 }
 .gallery {
   height:100%;
-  width:fit-content;
+  width:90vw;
   padding: 1em;
   background-color: rgba(0, 0, 0, 0.1);
   display:grid;
@@ -24,7 +24,10 @@
 }
 .games-container {
   overflow-x: hidden;
-  width:100%;
+  width:95%;
+  height: 35vh;
+  align-self: center;
+  gap: 1em;
 }
 
 .scrollable {
@@ -36,3 +39,58 @@
   transition: all 0.3s ease;
 }
 
+
+@media(max-width: 1050px){
+  .games-container{
+    width: 93%;
+    height: 30vh;
+    gap: 1em
+  }
+}
+
+@media(max-width: 950px){
+  .games-container{
+    width: 90%;
+    height: 460px;
+    gap: 1em
+  } 
+}
+
+@media(max-width: 550px){
+  .games-container{
+    width: 90%;
+    height: 250px;
+    gap: 1em
+  } 
+}
+
+@media(max-width: 450px){
+  .games-container{
+    width:85%;
+    height: 320px;
+    gap: 1em
+  }
+}
+
+@media(max-height: 1400px)and (min-height: 1300px){
+  .games-container{
+    width: 93%;
+    height: 550px;
+    gap: 1em
+  }
+}
+@media(max-height: 1050px)and (min-height: 1000px){
+  .games-container{
+    width: 93%;
+    height: 375px;
+    gap: 1em
+  }
+}
+
+@media(max-height: 799px)and (min-height: 650px){
+  .games-container{
+    width: 84%;
+    height: 250px;
+    gap: 1em
+  }
+}

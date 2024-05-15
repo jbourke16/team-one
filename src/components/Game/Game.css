@@ -1,12 +1,12 @@
 .image-container {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     padding: 1em;
     background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     border-radius: .5em;
-    margin:3em 0 1em 1em;
+    margin:1em 0 1em 1em;
     
 }
 .image-container:hover{
@@ -48,9 +48,9 @@
 }
 .modal-content {
     line-height: 1.4;
-    padding: 1vh 3vh;
+    padding: 3vh 3vh;
     border-radius: 10px;
-    max-width: 35vw;
+    width: 40%;
     height: fit-content;
     background-color: rgb(0, 0, 0, 0.8);
     position: relative;
@@ -78,6 +78,7 @@
     font-weight: 700;
     font-size: 2.5em;
     align-items: center;
+    gap:15px;
     display: flex;
 }
 .game-header{
@@ -97,7 +98,8 @@
 .modal{
     display: flex;
     align-items: center;
-    margin-left:50vh;
+    justify-content: center;
+
 }
 .reviews-link{
     text-decoration: none;
@@ -105,19 +107,143 @@
     display: inline-flex;
     padding: 0 2em;
     font-family: "IBM Plex Sans";
-    color: #7b7b7b;
+    color: white;
     text-align: center;
-    margin-left: 30%;
+    justify-content: center;
+    align-items: center;
+    width:65px;
+    height: 30px;
+    border-radius: 1vh;
+    background-color: #6B4EE6;
 }
 .reviews-link:hover{
-    color:#d7afff;
-    text-shadow: #6b4ee6 1px 0px 10px ;
+    /* color:#d7afff;
+    text-shadow: #6b4ee6 1px 0px 10px ; */
+    box-shadow: 1px 2px 4px white;
 }
 .heart-button{
+    border: solid 2px white;
     border-radius:1em;
     padding: .5vh;
     margin-right: 3vw;
 }
 .heart-button:hover{
     box-shadow: 1px 2px 4px white;
+}
+
+@media(max-width: 1300px){
+    .image-container{
+        height: 14rem;
+        width: 14rem;
+    }
+}
+
+@media(max-width: 1050px){
+    .image-container{
+        height: 140px;
+        width: 140px;
+        margin:0
+    }
+    .modal-content{
+        height: 80%
+    }
+    .game-modal-name{
+        font-size: 1.5em;
+    }
+    .game-bio,.game-genre,.game-console,.game-release{
+        font-size: .75em;
+    }
+}
+
+@media(max-width: 950px){
+    .image-container{
+        height: 430px;
+        width: 430px;
+        margin:0
+    }
+    .modal-content{
+        height: 60%;
+        width: 75%;
+    }
+    .game-modal-name{
+        font-size: 2.75em;
+    }
+    .game-bio,.game-genre,.game-console,.game-release{
+        font-size: 1.15em;
+    }
+}
+
+@media(max-width: 550px){
+    .image-container{
+        height: 220px;
+        width: 220px;
+        margin:0
+    }
+    .modal-content{
+        height: fit-content;
+        width: 75%;
+    }
+    .game-modal-name{
+        font-size: 1.5em;
+    }
+    .game-bio,.game-genre,.game-console,.game-release{
+        font-size: .75em;
+    }
+}
+
+@media(max-width: 450px){
+    .image-container{
+        height: 280px;
+        width: 280px;
+        margin:0
+    } 
+    .modal-content{
+        height: fit-content;
+        width: 75%;
+    }
+    .game-modal-name{
+        font-size: 1.5em;
+    }
+    .game-bio,.game-genre,.game-console,.game-release{
+        font-size: .75em;
+    }
+}
+
+
+@media(max-height: 1400px)and (min-height: 1300px){
+    .image-container{
+        height: 500px;
+        width: 500px;
+        margin:0
+    }
+    .modal-content{
+        height: fit-content;
+        width: 75%;
+    }
+    .game-modal-name{
+        font-size: 2.75em;
+    }
+    .game-bio,.game-genre,.game-console,.game-release{
+        font-size: 1.15em;
+    }
+}
+
+@media(max-height: 1050px)and (min-height: 1000px){
+    .image-container{
+        height: 350px;
+        width: 350px;
+        margin:0
+    }
+    .modal-content{
+        height: fit-content;
+        width: 75%;
+    }
+}
+
+@media(max-height: 799px)and (min-height: 650px){
+    .image-container{
+        height: 220px;
+        width: 220px;
+        margin:0
+    }
 }
