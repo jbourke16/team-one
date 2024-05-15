@@ -53,7 +53,7 @@ function Game(props) {
                   className="heart-button"
                   style={{
                     backgroundColor: props.isFavGame ? "#EA37A3" : "black",
-                    border: "none",
+                    // border: "none",
                     cursor: "pointer",
                   }}
                   onClick={handleFavGameClick}
