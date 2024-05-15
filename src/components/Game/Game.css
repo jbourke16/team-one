@@ -1,12 +1,12 @@
 .image-container {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     padding: 1em;
     background-color: rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     border-radius: .5em;
-    margin:3em 0 1em 1em;
+    margin:1em 0 1em 1em;
     
 }
 .image-container:hover{
@@ -120,4 +120,68 @@
 }
 .heart-button:hover{
     box-shadow: 1px 2px 4px white;
+}
+
+@media(max-width: 1300px){
+    .image-container{
+        height: 14rem;
+        width: 14rem;
+    }
+}
+
+@media(max-width: 1050px){
+    .image-container{
+        height: 140px;
+        width: 140px;
+        margin:0
+    }
+}
+
+@media(max-width: 950px){
+    .image-container{
+        height: 430px;
+        width: 430px;
+        margin:0
+    }
+}
+
+@media(max-width: 550px){
+    .image-container{
+        height: 220px;
+        width: 220px;
+        margin:0
+    }
+}
+
+@media(max-width: 450px){
+    .image-container{
+        height: 280px;
+        width: 280px;
+        margin:0
+    } 
+}
+
+
+@media(max-height: 1400px)and (min-height: 1300px){
+    .image-container{
+        height: 500px;
+        width: 500px;
+        margin:0
+    }
+}
+
+@media(max-height: 1050px)and (min-height: 1000px){
+    .image-container{
+        height: 350px;
+        width: 350px;
+        margin:0
+    }
+}
+
+@media(max-height: 800px)and (min-height: 650px){
+    .image-container{
+        height: 220px;
+        width: 220px;
+        margin:0
+    }
 }
