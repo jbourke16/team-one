@@ -78,15 +78,20 @@
     }
 }
 
-@media(max-width:450px){
+@media(max-width: 450px){
     .link{
-        font-size: 13px;
+        font-size: 15px;
+    }
+    .links{
+        justify-content: left;
+        gap: 25px;
+        margin: 0 10px
     }
     .nav{
         height: 60px;
     }
     .authlink{
         padding: 0;
-        font-size: 15px;
+        font-size: 10px;
     }
 }

@@ -26,7 +26,7 @@ const MyFavs = ({user, setToggleUser}) => {
               favGames.length > 0 && favGames.map((game, index) => {
                 let isFavGame = user?.favGames?.includes(game._id)
                 return (
-                    <Game
+                    <Game 
                       id={game._id}
                       name={game.name}
                       image={game.image}

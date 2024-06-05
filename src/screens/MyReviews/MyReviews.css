@@ -39,3 +39,36 @@
     width: 100vw;
     height: 100vh;
 }
+
+@media(max-width: 1050px) {
+    .myreviews-header{
+        text-align: center;
+        font-size: 60px;
+        padding: 0;
+        width: 98vw;
+    }
+}
+
+@media(max-width: 850px) {
+    .myreviews-header{
+        text-align: center;
+        font-size: 40px;
+        padding: 0;
+        width: 98vw;
+    }
+}
+
+@media(max-width: 550px) {
+    .myreviews-header{
+        text-align: center;
+        font-size: 20px;
+        padding: 0;
+        width: 98vw;
+    }
+    .edit-modal-btn{
+        margin: 0 1em 1em 50%
+    }
+}
+
+
+
