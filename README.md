@@ -10,7 +10,7 @@ REK'T is a social gaming platform that connects passionate gamers, allowing them
 
 It's like <em>Rotten Tomatoes</em> or <em>Letterboxd</em>, but for games (and arguably, better)!
 
-Visit and sign up with <a href="">REK'T</a> - start your journey today!
+Visit and sign up with <a href="https://rekt-api.netlify.app/">REK'T</a> - start your journey today!
 
 ![alt text](https://github.com/jbourke16/team-rekt-frontend/assets/156385243/6280d31f-5575-46d8-8aff-9933a0fb612a)
 
